@@ -1,1 +1,37 @@
-# Guitar-Centaur-Add-to-Cart
+# Project Name
+
+> Guitaur-Centaur - Add to Cart - service component
+
+## Related Projects
+
+  https://github.com/hrr49-tully
+
+## Table of Contents
+
+1. [Usage](#Usage)
+1. [Requirements](#requirements)
+1. [Development](#development)
+
+## Usage
+
+> Some usage instructions
+Add-to-Cart
+
+## Requirements
+
+An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
+
+- Node 6.13.0
+- etc
+
+## Development
+
+### Installing Dependencies
+
+From within the root directory:
+
+```sh
+npm install -g webpack
+npm install
+```
+
