@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS Products;
+
+CREATE DATABASE Products;
+
+USE Products;
+
+CREATE TABLE Items (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  description TEXT NOT NULL,
+  price DECIMAL (10, 2),
+  PRIMARY KEY (id)
+);
