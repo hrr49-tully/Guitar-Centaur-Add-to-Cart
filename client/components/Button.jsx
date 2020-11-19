@@ -4,7 +4,6 @@ class Button extends React.Component {
 
   constructor(props) {
     super(props);
-    console.log('props in Button are ', props);
   }
 
   render() {

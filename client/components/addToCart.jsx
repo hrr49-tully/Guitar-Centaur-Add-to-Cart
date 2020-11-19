@@ -105,7 +105,6 @@ class AddToCart extends React.Component {
           <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} hover={this.handleHover} click={this.handleClick} />
         </div>
     <div className="addtocart">
-      {/* <div className="addtolist"><a href=""> Add to List </a> </div> */}
         <AddToList />
         <Price price={this.props.prices}/>
         <Financing />
@@ -114,9 +113,6 @@ class AddToCart extends React.Component {
         <Inventory inventory={this.state.inventory}/>
         <Questions questions={this.props.questions}/>
       </div>
-        {/* <Questions questions={this.props.questions}/> */}
-
-
       </>
     );
   }
