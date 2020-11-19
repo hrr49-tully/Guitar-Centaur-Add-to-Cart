@@ -8,6 +8,7 @@ import Price from './Price.jsx';
 import Questions from './Questions.jsx';
 import Financing from './Financing.jsx';
 import Images from './Images.jsx';
+import AddToList from './AddToList.jsx';
 
 class AddToCart extends React.Component {
 
@@ -27,6 +28,26 @@ class AddToCart extends React.Component {
     this.componentDidMount = this.componentDidMount.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleFirst = this.handleFirst.bind(this);
+    this.handleHover = this.handleHover.bind(this);
+  }
+
+  handleHover (e) {
+    axios.get('/api/styles')
+      .then(response => {
+        var hover = e.target.src.toString();
+        for(var i = 0; i < response.data.length; i++) {
+          if(response.data[i].image_url === hover) {
+            var newstyle = response.data[i].style;
+          }
+        }
+        this.setState({
+          style: newstyle
+        });
+      })
+      .catch(err => {
+        console.log('we have an error from your hover method ', err);
+      });
+      e.persist();
   }
 
   handleFirst (str) {
@@ -39,7 +60,6 @@ class AddToCart extends React.Component {
         var clicked = e.target.src.toString();
         for(var i = 0; i < response.data.length; i++) {
           if(response.data[i].image_url === clicked) {
-            var newstyle = response.data[i].style;
             var newquantity = response.data[i].quantity;
           }
         }
@@ -56,9 +76,6 @@ class AddToCart extends React.Component {
             inventory: 'Most orders placed before noon ET ship same day (except weekends and holidays).'
           });
         }
-        this.setState({
-          style: newstyle
-        });
       })
       .catch(err => {
         console.log('could not retrieve style');
@@ -83,12 +100,13 @@ class AddToCart extends React.Component {
   render () {
     return (
       <>
-      <Style style={this.handleFirst(this.state.style)} />
+      <Style style={this.handleFirst(this.state.style)}  />
         <div className="img-container">
-          <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} click={this.handleClick} />
+          <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} hover={this.handleHover} click={this.handleClick} />
         </div>
     <div className="addtocart">
-      <div className="addtolist"><a href=""> Add to List </a> </div>
+      {/* <div className="addtolist"><a href=""> Add to List </a> </div> */}
+        <AddToList />
         <Price price={this.props.prices}/>
         <Financing />
         <Message themessage={this.state.message}/>
