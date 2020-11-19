@@ -1,6 +1,4 @@
 import React from 'react';
-import image from './image.js';
-import phone from './image.js';
 
 class Financing extends React.Component {
 

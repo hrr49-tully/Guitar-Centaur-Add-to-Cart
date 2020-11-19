@@ -12,8 +12,6 @@ class Price extends React.Component {
       <div className="product-price"> ${this.props.price} </div>
       <div className="freeshipping"> +Free Shipping </div>
     </div>
-
-
     );
   }
 }
