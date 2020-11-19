@@ -9,7 +9,7 @@ class Questions extends React.Component {
   render() {
     return (
     <div className="qwrapper">
-      <div className="questions"> Have Questions?        866-498-7882
+      <div className="questions"> Have Questions? <img className="phone" src={'https://www.clker.com//cliparts/R/i/G/W/R/P/black-phone-hi.png'}/> 866-498-7882
       </div>
       <div className="experts">
       Call our experts for product info and phone-only specials.
