@@ -8,26 +8,16 @@ CREATE TABLE Items (
   id INT(11) NOT NULL AUTO_INCREMENT,
   description TEXT NOT NULL,
   price DECIMAL (10, 2),
-  quantity INT(11) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE Styles (
   id INT (11) NOT NULL AUTO_INCREMENT,
   style TEXT NOT NULL,
+  quantity INT(11) NOT NULL,
   image_url TEXT NOT NULL,
   PRIMARY KEY(id)
 )
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -14,10 +14,20 @@ app.get('/api/values', (req, res) => {
       res.status(404);
       res.end();
     } else {
-      // console.log('hello from app.js!!');
       res.status(201).send(response);
     }
   });
 });
+
+app.get('/api/styles', (req, res) => {
+  db.getStyles((err, response) => {
+    if(err) {
+      res.status(404);
+      res.end();
+    } else {
+      res.status(201).send(response);
+    }
+  });
+})
 
 module.exports = app;
