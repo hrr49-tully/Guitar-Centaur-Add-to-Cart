@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import AddToCart from './components/addToCart.jsx';
 import Description from './components/Description.jsx';
+import Questions from './components/Questions.jsx';
 
 class App extends React.Component {
 
