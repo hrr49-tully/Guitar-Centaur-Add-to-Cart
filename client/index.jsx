@@ -29,8 +29,10 @@ class App extends React.Component {
 
   render () {
     return (
+      <>
         <Description description={this.state.description}/>
         <AddToCart prices={this.state.price} questions={Questions}/>
+      </>
     );
   }
 }
