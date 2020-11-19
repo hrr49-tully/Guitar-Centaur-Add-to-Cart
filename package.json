@@ -11,7 +11,8 @@
   "scripts": {
     "build": "webpack -d --watch",
     "seed": "node seeder/seeder.js",
-    "server": "nodemon server/server.js",
+    "server-dev": "nodemon server/server.js",
+    "server": "node server/server.js",
     "test": "jest server/test.js --detectOpenHandles"
   },
   "dependencies": {
