@@ -100,10 +100,16 @@ class AddToCart extends React.Component {
   render () {
     return (
       <>
-      <Style style={this.handleFirst(this.state.style)}  />
-        <div className="img-container">
+    <div className="styleandimage">
+      <div className="styles">
+        <Style style={this.handleFirst(this.state.style)}  />
+      </div>
+      <div className="img-container">
           <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} hover={this.handleHover} click={this.handleClick} />
         </div>
+    </div>
+
+
     <div className="addtocart">
         <AddToList />
         <Price price={this.props.prices}/>
