@@ -4,6 +4,16 @@
   width: 80%;
 }
 
+.styleandimage {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+
 .phone {
   height: 18px;
   padding-right: 6px;
@@ -22,7 +32,7 @@
 
 .descriptionwrapper {
   width: 80%;
-  text-align: left;
+  text-align: center;
   display: inline-block;
 }
 
@@ -57,7 +67,7 @@
 }
 
 .stylewrapper {
-  text-align: left;
+  text-align: center;
   width: 100%;
   overflow: hidden;
 }
@@ -77,7 +87,7 @@
 .sub-button {
   background-color: #cd2418;
   color: #ffffff;
-  width: 85%;
+  width: 80%;
   height: 40px;
   float: right;
   font-size: 25px;
@@ -107,8 +117,8 @@
   float: right;
   background: #F8F8F8;
   padding: 15px;
-  position: relative;
-  width: 29%;
+  /* position: relative; */
+  width: 23%;
   height: 50%;
   z-index: 2;
   box-sizing: border-box;
@@ -155,7 +165,7 @@
 .img-container {
   margin-top: 20px;
   height: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 img {

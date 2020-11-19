@@ -4,6 +4,7 @@ import axios from 'axios';
 import AddToCart from './components/addToCart.jsx';
 import Description from './components/Description.jsx';
 import Questions from './components/Questions.jsx';
+import Style from './components/Style.jsx';
 
 class App extends React.Component {
 
@@ -31,7 +32,8 @@ class App extends React.Component {
   render () {
     return (
       <>
-        <Description description={this.state.description}/>
+         <Description description={this.state.description}/>
+
         <AddToCart prices={this.state.price} questions={Questions}/>
       </>
     );
