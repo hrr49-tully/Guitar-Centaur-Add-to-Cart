@@ -4,9 +4,6 @@ class Style extends React.Component {
 
   constructor(props) {
     super(props);
-    // console.log('style is ', this.props.style);
-    // console.log('first letter is', this.props.style[0]);
-
   }
 
   render() {
