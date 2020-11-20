@@ -1,0 +1,17 @@
+.stylewrapper {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.styletype {
+  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+  display: inline-block;
+}
+
+.choosestyle {
+  text-align: left;
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 10px;
+  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+}

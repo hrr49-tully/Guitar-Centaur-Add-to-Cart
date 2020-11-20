@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../css/Button.module.css';
+
 class Button extends React.Component {
 
   constructor(props) {
@@ -10,12 +12,12 @@ class Button extends React.Component {
     return (
       <form>
         <input
-          className="sub-button"
+          className={styles.subbutton}
           type="submit"
           value={this.props.button} >
         </input>
         <input
-          className="subnumber"
+          className={styles.subnumber}
           type="number"
           min="1"
           max="100"
