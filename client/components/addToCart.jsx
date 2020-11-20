@@ -9,6 +9,8 @@ import Questions from './Questions.jsx';
 import Financing from './Financing.jsx';
 import Images from './Images.jsx';
 import AddToList from './AddToList.jsx';
+import Description from './Description.jsx';
+
 
 class AddToCart extends React.Component {
 
@@ -29,6 +31,7 @@ class AddToCart extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleFirst = this.handleFirst.bind(this);
     this.handleHover = this.handleHover.bind(this);
+
   }
 
   handleHover (e) {
@@ -100,16 +103,12 @@ class AddToCart extends React.Component {
   render () {
     return (
       <>
-    <div className="styleandimage">
-      <div className="styles">
+    <div className="biggrid">
+        <Description />
+    <div className="description">{this.props.description}</div>
         <Style style={this.handleFirst(this.state.style)}  />
-      </div>
-      <div className="img-container">
-          <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} hover={this.handleHover} click={this.handleClick} />
-        </div>
+        <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} hover={this.handleHover} click={this.handleClick} />
     </div>
-
-
     <div className="addtocart">
         <AddToList />
         <Price price={this.props.prices}/>
@@ -118,7 +117,7 @@ class AddToCart extends React.Component {
         <Button other={this.state.message} button={this.state.status}/>
         <Inventory inventory={this.state.inventory}/>
         <Questions questions={this.props.questions}/>
-      </div>
+    </div>
       </>
     );
   }
