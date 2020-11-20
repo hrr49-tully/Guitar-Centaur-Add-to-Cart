@@ -1,0 +1,23 @@
+.biggrid {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.description {
+  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+}
+
+.addtocart {
+  float: right;
+  background: #F8F8F8;
+  padding: 15px;
+  width: 45%;
+  height: 100%;
+  z-index: 2;
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border: 1px solid #E7E7E7;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../css/AddToList.module.css';
 
 class AddToList extends React.Component {
 
@@ -8,7 +9,7 @@ class AddToList extends React.Component {
 
   render() {
     return (
-      <div className="addtolist">
+      <div className={styles.addtolist}>
         <a href=""> Add to List </a>
       </div>
     );

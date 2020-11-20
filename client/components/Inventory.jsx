@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../css/Inventory.module.css';
+
 class Inventory extends React.Component {
 
   constructor(props) {
@@ -8,10 +10,11 @@ class Inventory extends React.Component {
 
   render() {
     return (
-      <div className="inventorywrapper">
-        <div className="inventory">{this.props.inventory}</div>
+      <div className={styles.inventorywrapper}>
+        <div className={styles.inventory}>
+          {this.props.inventory}
+        </div>
       </div>
-
     );
   }
 }
