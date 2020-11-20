@@ -31,19 +31,8 @@ class AddToCart extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleFirst = this.handleFirst.bind(this);
     this.handleHover = this.handleHover.bind(this);
-    // this.getDescription=this.getDescription.bind(this);
-  }
 
-  // getDescription () {
-  //   axios.get('/api/values')
-  //     .then(response => {
-  //       console.log('your response is ', response);
-  //       this.setState({
-  //         description: response.data[0].description
-  //       });
-  //     });
-  //     console.log('your description is', description);
-  // }
+  }
 
   handleHover (e) {
     axios.get('/api/styles')
