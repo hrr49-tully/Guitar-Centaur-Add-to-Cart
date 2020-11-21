@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../css/Description.module.css';
 
 class Description extends React.Component {
 
@@ -8,11 +9,11 @@ class Description extends React.Component {
 
   render() {
     return (
-    <div className="descriptionwrapper">
-      <div className="product-description"> Product Description: </div>
-      <div className="description"> {this.props.description}
+      <div className={styles.descriptionwrapper}>
+        <div className={styles.productdescription}> Product Description: </div>
+        <div className={styles.description}> {this.props.description}
+        </div>
       </div>
-    </div>
     );
   }
 }

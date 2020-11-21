@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../css/Style.module.css';
+
 class Style extends React.Component {
 
   constructor(props) {
@@ -8,9 +10,13 @@ class Style extends React.Component {
 
   render() {
     return (
-      <div className="stylewrapper">
-        <div className="choosestyle"> Choose Style: </div>
-        <div className="styletype"> {this.props.style}</div>
+      <div className={styles.stylewrapper}>
+        <div className={styles.choosestyle}>
+          Choose Style:
+        </div>
+        <div className={styles.styletype}>
+          {this.props.style}
+        </div>
       </div>
     );
   }

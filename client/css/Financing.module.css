@@ -1,0 +1,16 @@
+.financewrapper {
+  width: 100%;
+}
+
+.financing {
+  float: left;
+  font-size: 13px;
+  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+  padding-bottom: 30px;
+}
+
+
+.giftcard {
+  height: 18px;
+  padding-right: 8px;
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../css/Message.module.css';
+
 class Message extends React.Component {
 
   constructor(props) {
@@ -8,10 +10,11 @@ class Message extends React.Component {
 
   render() {
     return (
-      <div className="messagewrapper">
-         <span className="message"> {this.props.themessage} </span>
+      <div className={styles.messagewrapper}>
+        <span className={styles.message}>
+          {this.props.themessage}
+        </span>
       </div>
-
     );
   }
 }

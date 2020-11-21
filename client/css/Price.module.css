@@ -1,0 +1,15 @@
+.price-wrapper {
+  float: right;
+}
+
+.productprice {
+  font-size: 40px;
+  float: left;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-family: montserratregular,Arial,Helvetica,sans-serif;
+}
+
+.freeshipping {
+  font-size: 12px;
+}
