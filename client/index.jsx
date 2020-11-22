@@ -41,8 +41,5 @@ class App extends React.Component {
   }
 }
 
-<<<<<<< HEAD
+
 ReactDOM.render(<App />, document.getElementById('service3'));
-=======
-ReactDOM.render(<App />, document.getElementById('ATC'));
->>>>>>> ae66c4d49898530a34359d8177625528554a8c10
