@@ -1,6 +1,6 @@
 const app = require('./app');
 
-const port = 3001;
+const port = 3003;
 
 console.log('your server is running');
 

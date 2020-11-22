@@ -1,3 +1,7 @@
+##AWS key ##
+*.pem
+longin.sh
+
 ## MAC files ##
 .DS_Store
 
