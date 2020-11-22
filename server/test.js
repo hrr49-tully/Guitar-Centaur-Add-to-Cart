@@ -19,7 +19,7 @@ const tests = {
 describe("Test the root path", () => {
   test("It should response the GET method", done => {
     request(app)
-      .get("/api/values")
+      .get("/values")
       .then(response => {
         expect(response.statusCode).toBe(201);
         done();
@@ -28,7 +28,7 @@ describe("Test the root path", () => {
 
   test("It should not have a POST method", done => {
     request(app)
-      .post("/api/values")
+      .post("/values")
       .then(response => {
         expect(response.statusCode).toBe(404);
         done();

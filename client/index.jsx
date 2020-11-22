@@ -30,6 +30,7 @@ class App extends React.Component {
   }
 
   render () {
+    console.log(this.state)
     return (
       <>
       <div className={styles.container}>
@@ -41,4 +42,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('service2'));
