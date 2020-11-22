@@ -1,1 +1,0 @@
-ssh -i "/Users/tylerbailey/Desktop/FEC/Guitar-Centaur-Add-to-Cart/Penny.pem" ec2-user@ec2-107-22-130-204.compute-1.amazonaws.com
