@@ -1,5 +1,5 @@
 .biggrid {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-row-start: 1;
 }
 
@@ -11,12 +11,13 @@
   float: right;
   background: #F8F8F8;
   padding: 15px;
-  width: 65%;
+  width: 55%;
   height: 100%;
   z-index: 2;
   display: grid;
   grid-row-start: 1;
-  grid-column-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
   border: 1px solid black;
   box-sizing: border-box;
   border: 1px solid #E7E7E7;

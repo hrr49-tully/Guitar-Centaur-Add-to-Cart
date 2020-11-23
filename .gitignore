@@ -1,6 +1,6 @@
 ##AWS key ##
 *.pem
-longin.sh
+login.sh
 
 ## MAC files ##
 .DS_Store

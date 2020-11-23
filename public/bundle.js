@@ -350,11 +350,11 @@ var Financing = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: _css_Financing_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].giftcard,
         src: 'https://www.photowork.net/wp-content/uploads/2017/01/Giftcard.jpg'
-      }), "Special 6-month financing: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }), "Special 6-month financing: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: ""
-      }, " $8 back in rewards. ")), " Valid through 12/31/2020. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, " $8 back in rewards. ")), "Valid  12/31/2020. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: ""
-      }, " Get Details "), " "), "About Special Financing Offers"));
+      }, " Get Details "), " "), " About Special Financing Offers"));
     }
   }]);
 
@@ -3329,7 +3329,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".OkT6QDqk5tkKh_EtZMogg {\n  padding-bottom: 10px;\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n._1MUWzaWo-dgcGV8RYpIsMu {\n  font-weight: bold;\n  width: 80%;\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n._3I-3TnwWKNnIgvV1vNLf81 {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".OkT6QDqk5tkKh_EtZMogg {\n  padding-bottom: 10px;\n  padding-right: 100px;\n  margin-right: 75px;\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n._1MUWzaWo-dgcGV8RYpIsMu {\n  font-weight: bold;\n  /* width: 80%; */\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n._3I-3TnwWKNnIgvV1vNLf81 {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"descriptionwrapper": "OkT6QDqk5tkKh_EtZMogg",
@@ -3356,7 +3356,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2TiWTzHvigrOOjFyu78kIG {\n  width: 100%;\n}\n\n.S3LKJEIyjfQFqJn9FNptq {\n  float: left;\n  font-size: 13px;\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n  padding-bottom: 30px;\n}\n\n\n._1aS5d1JoOxhwekUNhNbqh5 {\n  height: 18px;\n  padding-right: 8px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2TiWTzHvigrOOjFyu78kIG {\n  /* width: 100%; */\n}\n\n.S3LKJEIyjfQFqJn9FNptq {\n  float: left;\n  font-size: 13px;\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n  padding-bottom: 30px;\n}\n\n\n._1aS5d1JoOxhwekUNhNbqh5 {\n  height: 18px;\n  padding-right: 4px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"financewrapper": "_2TiWTzHvigrOOjFyu78kIG",
@@ -3408,7 +3408,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._3EMtKbifqZgIiYISKxgkMO {\n  color: black;\n  width: 100%;\n  margin-top: 20px;\n}\n\n._2cVmYQ_gQgVrx1MlxfLQ_a {\n  font-family: Montserrat;\n  font-size: 14px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._3EMtKbifqZgIiYISKxgkMO {\n  color: black;\n  width: 100%;\n  margin-top: 30px;\n  padding-bottom: 30px;\n}\n\n._2cVmYQ_gQgVrx1MlxfLQ_a {\n  font-family: Montserrat;\n  font-size: 14px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"inventorywrapper": "_3EMtKbifqZgIiYISKxgkMO",
@@ -3434,7 +3434,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._1r97UCRYVRjuqpohaXL35E {\n  color: green;\n  text-align: right;\n  float: right;\n  font-weight: bold;\n}\n\n.On0A39Fj-bDIT2LT-yxA3 {\n  width: 80%;\n  text-align: right;\n  float: right;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._1r97UCRYVRjuqpohaXL35E {\n  color: green;\n  text-align: right;\n  float: right;\n  font-weight: bold;\n}\n\n.On0A39Fj-bDIT2LT-yxA3 {\n  /* width: 80%; */\n  text-align: right;\n  float: right;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"message": "_1r97UCRYVRjuqpohaXL35E",
@@ -3487,7 +3487,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._3Ku1WhU32dS23qeYvd_Kgs {\n  font-weight: bold;\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n._2C_8DXiJW2X6tSjiUu3YK_ {\n  width: 105%;\n  margin-top: 20px;\n}\n\n.dP5X9JPlZ6P4Viqq4eDUi {\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 14px;\n  width: 70%;\n}\n\n._3optWkVxmrXpdlDcsSy6vA {\n  height: 16px;\n  padding-right: 6px;\n  padding-left: 5px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._3Ku1WhU32dS23qeYvd_Kgs {\n  font-weight: bold;\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n._2C_8DXiJW2X6tSjiUu3YK_ {\n  /* width: 105%; */\n  margin-top: 10px;\n}\n\n.dP5X9JPlZ6P4Viqq4eDUi {\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 14px;\n  /* width: 70%; */\n}\n\n._3optWkVxmrXpdlDcsSy6vA {\n  height: 16px;\n  padding-right: 6px;\n  padding-left: 5px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"questions": "_3Ku1WhU32dS23qeYvd_Kgs",
@@ -3542,7 +3542,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 2;\n  grid-row-start: 1;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  float: right;\n  background: #F8F8F8;\n  padding: 15px;\n  width: 65%;\n  height: 100%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 3;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  float: right;\n  background: #F8F8F8;\n  padding: 15px;\n  width: 55%;\n  height: 100%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"biggrid": "_2bvDjiaN4zSmyFCp51ub_Q",
