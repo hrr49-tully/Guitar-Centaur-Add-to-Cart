@@ -1,11 +1,13 @@
 .descriptionwrapper {
   padding-bottom: 10px;
+  padding-right: 100px;
+  margin-right: 75px;
   font-family: Montserratregular, Arial,Helvetica,sans-serif;
 }
 
 .productdescription {
   font-weight: bold;
-  width: 80%;
+  /* width: 80%; */
   font-family: Montserratregular, Arial,Helvetica,sans-serif;
 }
 
