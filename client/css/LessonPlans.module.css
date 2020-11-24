@@ -1,0 +1,47 @@
+.lessonsplanbutton{
+  min-height: 46px;
+  border: 1px solid #ededed !important;
+  white-space: normal !important;
+  line-height: normal !important;
+  background: none !important;
+  font-size: 12px;
+  font-weight: normal !important;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.lessonplan {
+  display: flex;
+}
+
+.lesson60 {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  display: flex;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.lesson30 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.lesson {
+  color: red;
+}
+
+.nothanks {
+  display: flex;
+  width: 100%;
+  padding-right: 20px;
+}

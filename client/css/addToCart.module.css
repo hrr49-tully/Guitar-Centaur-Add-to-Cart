@@ -1,6 +1,13 @@
 .biggrid {
   grid-column-start: 1;
   grid-row-start: 1;
+  column-gap: 100px;
+  display: block;
+}
+
+.qs {
+  display: flex;
+  width: 100%;
 }
 
 .description {
@@ -8,11 +15,10 @@
 }
 
 .addtocart {
-  float: right;
   background: #F8F8F8;
   padding: 15px;
-  width: 55%;
-  height: 100%;
+  width: 75%;
+  height: 60%;
   z-index: 2;
   display: grid;
   grid-row-start: 1;
@@ -21,4 +27,8 @@
   border: 1px solid black;
   box-sizing: border-box;
   border: 1px solid #E7E7E7;
+}
+
+.container {
+  display: flex;
 }

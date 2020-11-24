@@ -4,6 +4,7 @@ import axios from 'axios';
 import AddToCart from './components/addToCart.jsx';
 import Description from './components/Description.jsx';
 import Questions from './components/Questions.jsx';
+import LessonPlans from './components/LessonPlans.jsx';
 import styles from './css/index.module.css';
 
 class App extends React.Component {
@@ -33,7 +34,7 @@ class App extends React.Component {
     return (
       <>
       <div className={styles.container}>
-          <AddToCart description={this.state.description}prices={this.state.price} questions={Questions}/>
+          <AddToCart description={this.state.description} prices={this.state.price} questions={Questions} />
       </div>
 
       </>

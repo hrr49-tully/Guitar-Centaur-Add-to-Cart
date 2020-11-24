@@ -13,7 +13,7 @@ class Financing extends React.Component {
         <div className={styles.financing}>
         <img className={styles.giftcard} src={'https://www.photowork.net/wp-content/uploads/2017/01/Giftcard.jpg'}/>
         Special 6-month financing: <b> <a href="" > $8 back in rewards. </a></b>
-        Valid  12/31/2020. <b><a href=""> Get Details </a> </b> About Special Financing Offers</div>
+        Valid through 12/31/2020. <b><a href=""> Get Details </a> </b> About Special Financing Offers</div>
       </div>
     );
   }
