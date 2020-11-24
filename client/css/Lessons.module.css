@@ -1,0 +1,50 @@
+.lessonswrap {
+  padding-top: 20px;
+  font-family: montserratbold,"Arial Black",Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.lessonstype {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+.signup {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input {
+  display: inline-block;
+}
+
+.listitem {
+  display: inline-block;
+  width: 45%;
+  font-family: montserrat,"Arial Black",Arial,Helvetica,sans-serif;
+}
+
+.menu {
+  display: flex;
+  width: 345px;
+  vertical-align: baseline;
+  margin: 5px 0 0;
+}
+
+.input {
+  text-align: left;
+  float: left;
+}

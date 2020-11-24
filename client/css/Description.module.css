@@ -2,15 +2,19 @@
   padding-bottom: 10px;
   padding-right: 100px;
   margin-right: 75px;
-  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+  font-family: Montserrat, Arial,Helvetica,sans-serif;
+  width: 100%;
+
 }
 
 .productdescription {
   font-weight: bold;
-  /* width: 80%; */
-  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+  width: 80%;
+  font-family: Montserrat, Arial,Helvetica,sans-serif;
+
 }
 
 .description {
-  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+  font-family: Montserrat, Arial,Helvetica,sans-serif;
+  width: 40%;
 }

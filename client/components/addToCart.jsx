@@ -10,7 +10,9 @@ import Financing from './Financing.jsx';
 import Images from './Images.jsx';
 import AddToList from './AddToList.jsx';
 import Description from './Description.jsx';
+import Lessons from './Lessons.jsx';
 import styles from '../css/addToCart.module.css';
+import LessonPlans from './LessonPlans.jsx';
 
 class AddToCart extends React.Component {
 
@@ -103,21 +105,30 @@ class AddToCart extends React.Component {
   render () {
     return (
       <>
-      <div className={styles.biggrid}>
+    <div className={styles.biggrid}>
         <Description />
     <div className={styles.description}>{this.props.description}</div>
         <Style style={this.handleFirst(this.state.style)}  />
         <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} hover={this.handleHover} click={this.handleClick} />
+        <Lessons />
     </div>
-    <div className={styles.addtocart}>
+    <div className={styles.container}>
+      <div className={styles.addtocart}>
         <AddToList />
         <Price price={this.props.prices}/>
         <Financing />
         <Message themessage={this.state.message}/>
         <Button other={this.state.message} button={this.state.status}/>
         <Inventory inventory={this.state.inventory}/>
-        <Questions questions={this.props.questions}/>
+        <div className={styles.qs}>
+          <Questions questions={this.props.questions}/>
+        </div>
+      </div>
     </div>
+
+
+
+
       </>
     );
   }
