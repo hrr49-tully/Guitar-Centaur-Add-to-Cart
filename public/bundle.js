@@ -3792,7 +3792,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._29z_-u0CZF_qx_0eo_kpFW {\n  background-color: #cd2418;\n  color: #ffffff;\n  width: 75%;\n  height: 40px;\n  float: right;\n  font-size: 25px;\n  border-radius: 4px;\n}\n\n._3J3dd1dWSMnwIFnWs_LAXO {\n  width: 15%;\n  height: 35px;\n  padding-left: 10px;\n  float: left;\n  font-size: 20px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._29z_-u0CZF_qx_0eo_kpFW {\n  background-color: #cd2418;\n  color: #ffffff;\n  width: 75%;\n  height: 40px;\n  display: flex;\n  float: right;\n  font-size: 25px;\n  border-radius: 4px;\n}\n\n._3J3dd1dWSMnwIFnWs_LAXO {\n  width: 15%;\n  height: 35px;\n  padding-left: 10px;\n  float: left;\n  font-size: 20px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"subbutton": "_29z_-u0CZF_qx_0eo_kpFW",
@@ -4153,7 +4153,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  /* column-gap: 100px; */\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  display: flex;\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 95%;\n  height: 60%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  /* column-gap: 100px; */\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  display: flex;\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 100%;\n  height: 60%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"biggrid": "_2bvDjiaN4zSmyFCp51ub_Q",
