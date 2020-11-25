@@ -16,11 +16,11 @@ class Promos extends React.Component {
         <a className={styles.actual} href=""> <span className={styles.protect}> Protect Your Gear </span> </a>
       </li>
       <li className={styles.sometext}>
-        <img className={styles.shipping} src={'https://image.flaticon.com/icons/png/512/44/44266.png'}></img>
+      <span className={styles.anchor} > <img className={styles.shipping} src={'https://image.flaticon.com/icons/png/512/44/44266.png'}></img> </span>
         <a className={styles.actual} href=""> <span className={styles.free}> Free Shipping </span>  </a>
       </li>
       <li className={styles.international}>
-        <img className={styles.internationalicon} src={'https://image.flaticon.com/icons/png/128/558/558593.png'}></img>
+      <span className={styles.anchor}> <img className={styles.internationalicon} src={'https://image.flaticon.com/icons/png/128/558/558593.png'}></img> </span>
          <a className={styles.actual} href="" > <span className={styles.intshipping}> International Shipping </span> </a>
         </li>
       </ul>
