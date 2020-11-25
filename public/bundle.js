@@ -4097,7 +4097,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._3Ku1WhU32dS23qeYvd_Kgs {\n  font-weight: bold;\n  font-family: Montserrat, Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n._2C_8DXiJW2X6tSjiUu3YK_ {\n  margin-top: 55px;\n  display: block;\n}\n\n.dP5X9JPlZ6P4Viqq4eDUi {\n  font-family: 'Montserrat', sans-serif;\n  font-weight: bold;\n  font-size: 12px;\n  width: 70%;\n}\n\n._3optWkVxmrXpdlDcsSy6vA {\n  height: 16px;\n  padding-right: 6px;\n  padding-left: 5px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._3Ku1WhU32dS23qeYvd_Kgs {\n  font-weight: bold;\n  font-family: Montserrat, Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n._2C_8DXiJW2X6tSjiUu3YK_ {\n  margin-top: 45px;\n  display: block;\n  position: absolute;\n}\n\n.dP5X9JPlZ6P4Viqq4eDUi {\n  font-family: 'Montserrat', sans-serif;\n  font-weight: bold;\n  font-size: 12px;\n  width: 70%;\n}\n\n._3optWkVxmrXpdlDcsSy6vA {\n  height: 16px;\n  padding-right: 6px;\n  padding-left: 5px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"questions": "_3Ku1WhU32dS23qeYvd_Kgs",
