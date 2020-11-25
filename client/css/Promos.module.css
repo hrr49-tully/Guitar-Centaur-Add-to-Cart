@@ -11,6 +11,7 @@
   width: 22px;
   background-repeat: no-repeat;
   padding-top: 6px;
+  color: grey;
 }
 
 .rogue {
@@ -40,8 +41,14 @@
   position: relative;
   min-width: 140px;
   box-sizing: border-box;
-  display: table-cell;
+  display: flex;
   margin-bottom: 10px;
+  color: grey;
+}
+
+.actual {
+  color: grey;
+  font-family: montserratregular,Arial,Helvetica,sans-serif;
 }
 
 .internationalicon {

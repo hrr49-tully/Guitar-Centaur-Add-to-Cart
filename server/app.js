@@ -30,4 +30,8 @@ app.get('/api/styles', (req, res) => {
   });
 })
 
+app.get('/:item_id', (req, res) => {
+  res.sendFile(`${PUBLIC_DIR}/index.html`);
+});
+
 module.exports = app;

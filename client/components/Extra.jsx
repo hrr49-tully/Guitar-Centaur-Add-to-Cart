@@ -12,9 +12,8 @@ class Extra extends React.Component {
     <>
       <span className={styles.fourthfree}> Buy 3 lessons and get the fourth free! </span>
       <div className={styles.whylessons}>
-        <a href=""> Why Guitar Centaur Lessons? </a>
+        <a className={styles.whylessons}href=""> Why Guitar Centaur Lessons? </a>
       </div>
-
     </>
     );
   }
