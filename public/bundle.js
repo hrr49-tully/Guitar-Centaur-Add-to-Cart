@@ -3922,7 +3922,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._3EMtKbifqZgIiYISKxgkMO {\n  color: black;\n  width: 100%;\n  margin-top: 30px;\n  padding-bottom: 40px;\n}\n\n._2cVmYQ_gQgVrx1MlxfLQ_a {\n  font-family: Montserrat;\n  font-size: 14px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._3EMtKbifqZgIiYISKxgkMO {\n  color: black;\n  width: 100%;\n  margin-top: 30px;\n  padding-bottom: 30px;\n}\n\n._2cVmYQ_gQgVrx1MlxfLQ_a {\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n  font-size: 16px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"inventorywrapper": "_3EMtKbifqZgIiYISKxgkMO",
@@ -3978,7 +3978,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2V1yufX1avJeg9CQSko5FU {\n  padding-top: 20px;\n  font-family: montserratbold,\"Arial Black\",Arial,Helvetica,sans-serif;\n  font-size: 14px;\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n\n._3KCl1RWBf50Jg91bpnZGRd {\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n._9lQJr2OAAIrO5IXttIkzF {\n  font-weight: bold;\n  margin-top: 15px;\n}\n\ninput {\n  display: inline-block;\n}\n\n._2gPnoQozaBziodv-NjqXnY {\n  display: inline-block;\n  width: 45%;\n  font-family: montserrat,\"Arial Black\",Arial,Helvetica,sans-serif;\n}\n\n._1WGT26QUdncPBus3COPlOe {\n  display: flex;\n  width: 345px;\n  vertical-align: baseline;\n  margin: 5px 0 0;\n}\n\n._3WQwu7G3V74jIz3AVAiPR3 {\n  text-align: left;\n  float: left;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2V1yufX1avJeg9CQSko5FU {\n  padding-top: 20px;\n  font-family: Montserrat,\"Arial Black\",Arial,Helvetica,sans-serif;\n  font-size: 14px;\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n\n._3KCl1RWBf50Jg91bpnZGRd {\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n._9lQJr2OAAIrO5IXttIkzF {\n  font-weight: bold;\n  margin-top: 15px;\n}\n\ninput {\n  display: inline-block;\n}\n\n._2gPnoQozaBziodv-NjqXnY {\n  display: inline-block;\n  width: 100%;\n  /* font-family: Montserrat,\"Arial Black\",Arial,Helvetica,sans-serif; */\n}\n\n._1WGT26QUdncPBus3COPlOe {\n  display: flex;\n  width: 345px;\n  vertical-align: baseline;\n  margin: 5px 0 0;\n}\n\n._3WQwu7G3V74jIz3AVAiPR3 {\n  text-align: left;\n  float: left;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"lessonswrap": "_2V1yufX1avJeg9CQSko5FU",
@@ -4097,7 +4097,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._3Ku1WhU32dS23qeYvd_Kgs {\n  font-weight: bold;\n  font-family: Montserrat, Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n._2C_8DXiJW2X6tSjiUu3YK_ {\n  /* width: 105%; */\n  margin-top: 20px;\n  display: block;\n}\n\n.dP5X9JPlZ6P4Viqq4eDUi {\n  font-family: 'Montserrat', sans-serif;\n  font-weight: bold;\n  font-size: 12px;\n  width: 70%;\n}\n\n._3optWkVxmrXpdlDcsSy6vA {\n  height: 16px;\n  padding-right: 6px;\n  padding-left: 5px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._3Ku1WhU32dS23qeYvd_Kgs {\n  font-weight: bold;\n  font-family: Montserrat, Arial, Helvetica, sans-serif;\n  font-size: 14px;\n}\n\n._2C_8DXiJW2X6tSjiUu3YK_ {\n  /* width: 105%; */\n  margin-top: 5px;\n  display: block;\n}\n\n.dP5X9JPlZ6P4Viqq4eDUi {\n  font-family: 'Montserrat', sans-serif;\n  font-weight: bold;\n  font-size: 12px;\n  width: 70%;\n}\n\n._3optWkVxmrXpdlDcsSy6vA {\n  height: 16px;\n  padding-right: 6px;\n  padding-left: 5px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"questions": "_3Ku1WhU32dS23qeYvd_Kgs",
@@ -4152,7 +4152,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  column-gap: 100px;\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  display: flex;\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 75%;\n  height: 60%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  column-gap: 100px;\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  /* display: flex; */\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 95%;\n  height: 55%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"biggrid": "_2bvDjiaN4zSmyFCp51ub_Q",
