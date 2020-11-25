@@ -756,13 +756,13 @@ var Lessons = /*#__PURE__*/function (_React$Component) {
         className: _css_Lessons_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].menu
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_Lessons_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].listitem
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: _css_Lessons_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].input,
         onChange: this.handleLesson,
         type: "radio",
         value: "Online Lesson",
         checked: this.state.selectedValue === "Online Lesson"
-      })), "Online Lessons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), "Online Lessons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_Lessons_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].listitem
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "radio",
@@ -3978,7 +3978,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2V1yufX1avJeg9CQSko5FU {\n  padding-top: 20px;\n  font-family: Montserrat,\"Arial Black\",Arial,Helvetica,sans-serif;\n  font-size: 14px;\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n\n._3KCl1RWBf50Jg91bpnZGRd {\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n._9lQJr2OAAIrO5IXttIkzF {\n  font-weight: bold;\n  margin-top: 15px;\n}\n\ninput {\n  display: inline-block;\n}\n\n._2gPnoQozaBziodv-NjqXnY {\n  display: inline-block;\n  width: 100%;\n  /* font-family: Montserrat,\"Arial Black\",Arial,Helvetica,sans-serif; */\n}\n\n._1WGT26QUdncPBus3COPlOe {\n  display: flex;\n  width: 345px;\n  vertical-align: baseline;\n  margin: 5px 0 0;\n}\n\n._3WQwu7G3V74jIz3AVAiPR3 {\n  text-align: left;\n  float: left;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2V1yufX1avJeg9CQSko5FU {\n  padding-top: 20px;\n  /* font-family: Montserrat,\"Arial Black\",Arial,Helvetica,sans-serif; */\n  font-family: Helvetica;\n  font-size: 14px;\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n\n._3KCl1RWBf50Jg91bpnZGRd {\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n._9lQJr2OAAIrO5IXttIkzF {\n  font-weight: bold;\n  margin-top: 15px;\n}\n\ninput {\n  display: inline-block;\n  margin-right: 5px;\n}\n\n._2gPnoQozaBziodv-NjqXnY {\n  display: inline-block;\n  width: 100%;\n  /* font-family: Montserrat,\"Arial Black\",Arial,Helvetica,sans-serif; */\n}\n\n._1WGT26QUdncPBus3COPlOe {\n  display: flex;\n  width: 345px;\n  vertical-align: baseline;\n  margin: 5px 0 0;\n}\n\n._3WQwu7G3V74jIz3AVAiPR3 {\n  text-align: left;\n  float: left;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"lessonswrap": "_2V1yufX1avJeg9CQSko5FU",

@@ -1,6 +1,7 @@
 .lessonswrap {
   padding-top: 20px;
-  font-family: Montserrat,"Arial Black",Arial,Helvetica,sans-serif;
+  /* font-family: Montserrat,"Arial Black",Arial,Helvetica,sans-serif; */
+  font-family: Helvetica;
   font-size: 14px;
   display: block;
   margin: 0;
@@ -29,6 +30,7 @@
 
 input {
   display: inline-block;
+  margin-right: 5px;
 }
 
 .listitem {
