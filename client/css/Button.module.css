@@ -3,6 +3,7 @@
   color: #ffffff;
   width: 75%;
   height: 40px;
+  display: flex;
   float: right;
   font-size: 25px;
   border-radius: 4px;
