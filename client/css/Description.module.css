@@ -4,7 +4,7 @@
   margin-right: 75px;
   font-family: Montserrat, Arial,Helvetica,sans-serif;
   width: 100%;
-
+  display: flex;
 }
 
 .productdescription {

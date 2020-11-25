@@ -1,12 +1,12 @@
 .biggrid {
   grid-column-start: 1;
   grid-row-start: 1;
-  column-gap: 100px;
+  /* column-gap: 100px; */
   display: block;
 }
 
 .qs {
-  /* display: flex; */
+  display: flex;
   width: 100%;
 }
 

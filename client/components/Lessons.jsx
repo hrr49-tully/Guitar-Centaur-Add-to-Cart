@@ -43,10 +43,8 @@ class Lessons extends React.Component {
     <div className ={styles.lessonstype}  >
       <div className={styles.menu}>
         <div className = {styles.listitem} >
-
             <input className={styles.input} onChange={this.handleLesson}  type="radio"  value= "Online Lesson" checked={this.state.selectedValue === "Online Lesson"} >
             </input>
-
           Online Lessons
         </div>
         <div className={styles.listitem} >
