@@ -1,7 +1,6 @@
 .biggrid {
   grid-column-start: 1;
   grid-row-start: 1;
-  /* column-gap: 100px; */
   display: block;
 }
 
@@ -11,7 +10,7 @@
 }
 
 .description {
-  font-family: Montserratregular, Arial,Helvetica,sans-serif;
+  font-family: Montserrat, Arial,Helvetica,sans-serif;
 }
 
 .addtocart {
