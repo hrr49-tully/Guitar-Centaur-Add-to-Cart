@@ -4528,7 +4528,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._1r97UCRYVRjuqpohaXL35E {\n  color: green;\n  text-align: right;\n  font-weight: bold;\n}\n\n.On0A39Fj-bDIT2LT-yxA3 {\n  text-align: right;\n  line-height: 1.5em;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._1r97UCRYVRjuqpohaXL35E {\n  color: green;\n  text-align: right;\n  font-weight: bold;\n  position: relative;\n  top: .80em;\n}\n\n.On0A39Fj-bDIT2LT-yxA3 {\n  text-align: right;\n  line-height: 1.5em;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"message": "_1r97UCRYVRjuqpohaXL35E",
