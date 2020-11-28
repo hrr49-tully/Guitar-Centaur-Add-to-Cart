@@ -1,0 +1,79 @@
+.popup {
+  background: #fff;
+  padding: 0;
+  font-size: 1.1em;
+  z-index: 3;
+  display: block;
+  font-family: Arial,Helvetica,"Helvetica Neue",sans-serif;
+  vertical-align: baseline;
+}
+
+.close {
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+.aside {
+  font-size: 12px;
+  padding: 8px;
+  display: block;
+}
+
+.popupinner {
+  display: block;
+  width: 300px;
+  position: absolute;
+  margin: auto;
+  bottom: 150%;
+  background-color: white ;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.popheader {
+  background: #efefef;
+  border-bottom: 1px dotted #ccc;
+  color: #333;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.list {
+  list-style: none;
+}
+
+.dot {
+  padding-left: 1em;
+  text-indent: -.7em;
+  text-align: left;
+  display: list-item;
+  margin-bottom: 7px;
+}
+
+.dot::before {
+  content: "• ";
+  text-align: left;
+  color: black;
+}
+
+.popbutton {
+  background:none;
+  border:none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  color: #cd2418;
+  text-decoration: underline;
+  font-family: Arial,Helvetica,"Helvetica Neue",sans-serif;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}

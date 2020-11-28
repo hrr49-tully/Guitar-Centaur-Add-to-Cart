@@ -20,7 +20,7 @@
 }
 
 .international {
-  font-family: montserratregular,Arial,Helvetica,sans-serif;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
   font-size: 12px;
   padding: 0 5px;
   text-align: left;
@@ -40,7 +40,7 @@
 }
 
 #ATC li {
-  font-family: montserratregular,Arial,Helvetica,sans-serif;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
   font-size: 12px;
   padding: 0 5px;
   text-align: left;
@@ -54,7 +54,7 @@
 
 .actual {
   color: #333;
-  font-family: montserratregular,Arial,Helvetica,sans-serif;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
 }
 
 .internationalicon {
@@ -64,7 +64,7 @@
 }
 
 .headphoneswrapper {
-  font-family: montserratregular,Arial,Helvetica,sans-serif;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
   font-size: 12px;
   padding: 0 5px;
   text-align: left;
@@ -95,7 +95,7 @@
 }
 
 .sometext {
-  font-family: montserratregular,Arial,Helvetica,sans-serif;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
   font-size: 12px;
   padding: 0 5px;
   text-align: left;
@@ -124,5 +124,5 @@
 
 #ATC a {
   color: #404040;
-  font-family: Montserratregular,Arial,Helvetica,sans-serif;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
 }

@@ -518,6 +518,87 @@ var Images = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
+/***/ "./client/components/International.jsx":
+/*!*********************************************!*\
+  !*** ./client/components/International.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/InternationalPopup.module.css */ "./client/css/InternationalPopup.module.css");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var InternationalPopup = /*#__PURE__*/function (_React$Component) {
+  _inherits(InternationalPopup, _React$Component);
+
+  var _super = _createSuper(InternationalPopup);
+
+  function InternationalPopup(props) {
+    var _this;
+
+    _classCallCheck(this, InternationalPopup);
+
+    _this = _super.call(this, props);
+    console.log('props in international popup are ', props);
+    return _this;
+  }
+
+  _createClass(InternationalPopup, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popup
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popupinner
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        onClick: this.props.closePopup,
+        className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].close,
+        src: "https://image.flaticon.com/icons/png/512/2938/2938566.png"
+      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popheader
+      }, "International Shipping"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
+        className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].aside
+      }, "This item can be shipped globally. We offer international shipping to over 100 countries worldwide."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popbutton,
+        onClick: this.props.closePopup
+      }, "close me")));
+    }
+  }]);
+
+  return InternationalPopup;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (InternationalPopup);
+
+/***/ }),
+
 /***/ "./client/components/Inventory.jsx":
 /*!*****************************************!*\
   !*** ./client/components/Inventory.jsx ***!
@@ -909,11 +990,15 @@ var Popup = /*#__PURE__*/function (_React$Component) {
         className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popup
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popupinner
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        onClick: this.props.closePopup,
+        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].close,
+        src: "https://image.flaticon.com/icons/png/512/2938/2938566.png"
+      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popheader
-      }, this.props.text), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
+      }, "Free Shipping"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
         className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].aside
-      }, this.props.words), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "This item qualifies for free ground shipping anywhere within the contiguous United States."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popbutton,
         onClick: this.props.closePopup
       }, "close me")));
@@ -1008,6 +1093,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/Promos.module.css */ "./client/css/Promos.module.css");
 /* harmony import */ var _Popup_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Popup.jsx */ "./client/components/Popup.jsx");
+/* harmony import */ var _International_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./International.jsx */ "./client/components/International.jsx");
+/* harmony import */ var _ProtectPopup_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ProtectPopup.jsx */ "./client/components/ProtectPopup.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1034,6 +1121,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+
 var Promos = /*#__PURE__*/function (_React$Component) {
   _inherits(Promos, _React$Component);
 
@@ -1050,10 +1139,8 @@ var Promos = /*#__PURE__*/function (_React$Component) {
       showShipping: false,
       showProtect: false,
       showInt: false,
-      header: 'this is a header',
       message: ''
-    }; // this.togglePopup = this.togglePopup.bind(this);
-
+    };
     _this.handleValue = _this.handleValue.bind(_assertThisInitialized(_this));
     _this.handleShip = _this.handleShip.bind(_assertThisInitialized(_this));
     _this.handleInternational = _this.handleInternational.bind(_assertThisInitialized(_this));
@@ -1070,33 +1157,28 @@ var Promos = /*#__PURE__*/function (_React$Component) {
     key: "handleShip",
     value: function handleShip(e) {
       this.setState({
-        showShipping: !this.state.showShipping
+        showShipping: !this.state.showShipping,
+        showInt: false,
+        showProtect: false
       });
-      console.log('value in free shipping is ', e.target.getAttribute('value'));
     }
   }, {
     key: "handleProtect",
     value: function handleProtect(e) {
       this.setState({
-        showProtect: !this.state.showProtect
+        showProtect: !this.state.showProtect,
+        showInt: false,
+        showShipping: false
       });
-      console.log('the value of protect is ', e.target.getAttribute('value'));
     }
   }, {
     key: "handleInternational",
     value: function handleInternational(e) {
       this.setState({
-        showInt: !this.state.showInt
+        showInt: !this.state.showInt,
+        showShipping: false,
+        showProtect: false
       });
-      console.log('the value of international is ', e.target.getAttribute('value'));
-    }
-  }, {
-    key: "togglePopup",
-    value: function togglePopup(e) {
-      this.setState({
-        showPopup: !this.state.showPopup
-      });
-      console.log('the value is ', e.target.getAttribute('value'));
     }
   }, {
     key: "render",
@@ -1117,9 +1199,7 @@ var Promos = /*#__PURE__*/function (_React$Component) {
       }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].protect,
         value: "Protect"
-      }, " Protect Your Gear "), " "), this.state.showProtect ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Popup_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        text: this.state.header,
-        words: "This item qualifies for free ground shipping anywhere within the contiguous United States.",
+      }, " Protect Your Gear "), " "), this.state.showProtect ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProtectPopup_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
         closePopup: this.handleProtect.bind(this)
       }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sometext
@@ -1138,8 +1218,6 @@ var Promos = /*#__PURE__*/function (_React$Component) {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].free,
         value: "Free Shipping"
       }, " Free Shipping "), " "), this.state.showShipping ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Popup_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        text: this.state.header,
-        words: "This item qualifies for free ground shipping anywhere within the contiguous United States.",
         closePopup: this.handleShip.bind(this)
       }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].international
@@ -1154,9 +1232,7 @@ var Promos = /*#__PURE__*/function (_React$Component) {
       }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].intshipping,
         value: "International"
-      }, " International Shipping "), " "), this.state.showInt ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Popup_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        text: this.state.header,
-        words: "This item qualifies for free ground shipping anywhere within the contiguous United States.",
+      }, " International Shipping "), " "), this.state.showInt ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_International_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
         closePopup: this.handleInternational.bind(this)
       }) : null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].rogue,
@@ -1169,6 +1245,91 @@ var Promos = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Promos);
+
+/***/ }),
+
+/***/ "./client/components/ProtectPopup.jsx":
+/*!********************************************!*\
+  !*** ./client/components/ProtectPopup.jsx ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/ProtectPopup.module.css */ "./client/css/ProtectPopup.module.css");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var ProtectPopup = /*#__PURE__*/function (_React$Component) {
+  _inherits(ProtectPopup, _React$Component);
+
+  var _super = _createSuper(ProtectPopup);
+
+  function ProtectPopup(props) {
+    var _this;
+
+    _classCallCheck(this, ProtectPopup);
+
+    _this = _super.call(this, props);
+    console.log('props in popup are ', props);
+    return _this;
+  }
+
+  _createClass(ProtectPopup, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popup
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popupinner
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        onClick: this.props.closePopup,
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].close,
+        src: "https://image.flaticon.com/icons/png/512/2938/2938566.png"
+      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popheader
+      }, " This Qualifies for Pro Coverage   "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].aside
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dot
+      }, "Covers accidental drops, spills or cracks"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dot
+      }, "No deductibles or additional cost"), "Pro Coverage will be offered when you add your gear to cart."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: _css_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popbutton,
+        onClick: this.props.closePopup
+      }, "close me")));
+    }
+  }]);
+
+  return ProtectPopup;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (ProtectPopup);
 
 /***/ }),
 
@@ -1690,6 +1851,34 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./client/css/InternationalPopup.module.css":
+/*!**************************************************!*\
+  !*** ./client/css/InternationalPopup.module.css ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./InternationalPopup.module.css */ "./node_modules/css-loader/dist/cjs.js!./client/css/InternationalPopup.module.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./client/css/Inventory.module.css":
 /*!*****************************************!*\
   !*** ./client/css/Inventory.module.css ***!
@@ -1883,6 +2072,34 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./client/css/ProtectPopup.module.css":
+/*!********************************************!*\
+  !*** ./client/css/ProtectPopup.module.css ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./ProtectPopup.module.css */ "./node_modules/css-loader/dist/cjs.js!./client/css/ProtectPopup.module.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_ProtectPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -4029,7 +4246,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".R48dHLInAF1WML39yeo2Z {\n  color: #e7131a;\n  font-family: montserratbold, \"Arial Black\",Arial,Helvetica,sans-serif;\n  margin-bottom: 7.5px;\n  font-size: 12px;\n}\n\n._29-TyT243RSGk0o7TgDUXG {\n  margin-top: 10px;\n  text-decoration: underline;\n  margin-bottom: 15px;\n  color: grey;\n  font-family: Montserrat, light;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".R48dHLInAF1WML39yeo2Z {\n  color: #e7131a;\n  font-family: Montserrat, \"Arial Black\",Arial,Helvetica,sans-serif;\n  margin-bottom: 7.5px;\n  font-size: 12px;\n}\n\n._29-TyT243RSGk0o7TgDUXG {\n  margin-top: 10px;\n  text-decoration: underline;\n  margin-bottom: 15px;\n  color: grey;\n  font-family: Montserrat, light;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"fourthfree": "R48dHLInAF1WML39yeo2Z",
@@ -4055,7 +4272,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".S3LKJEIyjfQFqJn9FNptq {\n  float: left;\n  font-size: 13px;\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n  padding-bottom: 20px;\n}\n\n._1aS5d1JoOxhwekUNhNbqh5 {\n  height: 18px;\n  padding-right: 4px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".S3LKJEIyjfQFqJn9FNptq {\n  float: left;\n  font-size: 13px;\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n  padding-bottom: 20px;\n}\n\n._1aS5d1JoOxhwekUNhNbqh5 {\n  height: 18px;\n  padding-right: 4px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"financing": "S3LKJEIyjfQFqJn9FNptq",
@@ -4085,6 +4302,36 @@ ___CSS_LOADER_EXPORT___.push([module.i, "._1uEiu-H9k0d8dEhMU-wyc7 {\n  padding-t
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"image": "_1uEiu-H9k0d8dEhMU-wyc7"
+};
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./client/css/InternationalPopup.module.css":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./client/css/InternationalPopup.module.css ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "._3tRb6cOJ0EbIHoHeQMNQXG {\n  background: #fff;\n  padding: 0;\n  font-size: 1.1em;\n  z-index: 3;\n  display: block;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  vertical-align: baseline;\n}\n\n._1EVRg-7qgZ3eXIZZVKHPoh {\n  width: 25px;\n  height: 25px;\n  float: right;\n  margin-top: 18px;\n  margin-right: 10px;\n}\n\n._3QH3_tW1wGbvaJI0Qaxxol {\n  font-size: 12px;\n  padding: 8px;\n  display: block;\n}\n\n.YJK2a1ncU5wUPuk5To7yH {\n  display: block;\n  width: 300px;\n  position: absolute;\n  margin: auto;\n  bottom: 150%;\n  background-color: white ;\n  border-radius: 3px 3px 0 0;\n  box-shadow: 0 0 6px rgba(0,0,0,0.2);\n  z-index: 100;\n}\n\n._3gTvNgxG3KGBDpP88bUcpO {\n  background: #efefef;\n  border-bottom: 1px dotted #ccc;\n  color: #333;\n  display: block;\n  font-size: 14px;\n  font-weight: bold;\n  padding: 8px;\n}\n\n.Q5XDyHspoFQQr4rAXO9nz {\n  background:none;\n  border:none;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  display: block;\n  color: #cd2418;\n  text-decoration: underline;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin-bottom: 5px;\n  margin-left: 5px;\n}", ""]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"popup": "_3tRb6cOJ0EbIHoHeQMNQXG",
+	"close": "_1EVRg-7qgZ3eXIZZVKHPoh",
+	"aside": "_3QH3_tW1wGbvaJI0Qaxxol",
+	"popupinner": "YJK2a1ncU5wUPuk5To7yH",
+	"popheader": "_3gTvNgxG3KGBDpP88bUcpO",
+	"popbutton": "Q5XDyHspoFQQr4rAXO9nz"
 };
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -4162,7 +4409,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2V1yufX1avJeg9CQSko5FU {\n  padding-top: 20px;\n  font-family: Helvetica;\n  font-size: 14px;\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n\n._3KCl1RWBf50Jg91bpnZGRd {\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n._9lQJr2OAAIrO5IXttIkzF {\n  font-weight: bold;\n  margin-top: 15px;\n}\n\ninput {\n  display: inline-block;\n  margin-right: 5px;\n}\n\n._2gPnoQozaBziodv-NjqXnY {\n  display: inline-block;\n  width: 100%;\n  /* font-family: Montserrat,\"Arial Black\",Arial,Helvetica,sans-serif; */\n}\n\n._1WGT26QUdncPBus3COPlOe {\n  display: flex;\n  width: 345px;\n  vertical-align: baseline;\n  margin: 5px 0 0;\n}\n\n._3WQwu7G3V74jIz3AVAiPR3 {\n  text-align: left;\n  float: left;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2V1yufX1avJeg9CQSko5FU {\n  padding-top: 20px;\n  font-family: Helvetica;\n  font-size: 14px;\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n\n._3KCl1RWBf50Jg91bpnZGRd {\n  display: block;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\n._9lQJr2OAAIrO5IXttIkzF {\n  font-weight: bold;\n  margin-top: 15px;\n}\n\ninput {\n  display: inline-block;\n  margin-right: 5px;\n}\n\n._2gPnoQozaBziodv-NjqXnY {\n  display: inline-block;\n  width: 100%;\n}\n\n._1WGT26QUdncPBus3COPlOe {\n  display: flex;\n  width: 345px;\n  vertical-align: baseline;\n  margin: 5px 0 0;\n}\n\n._3WQwu7G3V74jIz3AVAiPR3 {\n  text-align: left;\n  float: left;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"lessonswrap": "_2V1yufX1avJeg9CQSko5FU",
@@ -4218,10 +4465,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._1czmsgAEXEyMpW1pLBW0YR {\n  background: #fff;\n    /* border: 2px solid #ccc;\n    -webkit-border-radius: 3px 3px 0 0;\n    -moz-border-radius: 3px 3px 0 0;\n    border-radius: 3px 3px 0 0;\n    box-shadow: 0 0 6px rgba(0,0,0,0.2); */\n    padding: 0;\n    font-size: 1.1em;\n    z-index: 3;\n    display: block;\n    font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n    vertical-align: baseline;\n\n\n  /* position: absolute;\n  width: 50%;\n  height: 50%;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  background-color: rgba(0,0,0, 0.5);\n  opacity: 1; */\n}\n\n._38KoIGGc3zGFCXXrucabbl {\n  font-size: 12px;\n  padding: 8px;\n  display: block;\n}\n\n.xToavByUb-g71FYk3s1aT {\n  display: block;\n  width: 300px;\n  position: absolute;\n  margin: auto;\n  bottom: 150%;\n  background-color: white ;\n  border-radius: 3px 3px 0 0;\n  box-shadow: 0 0 6px rgba(0,0,0,0.2);\n  z-index: 100;\n}\n\n._2dcZj7Nlmz1ok3zgcV5ath {\n  background: #efefef;\n  border-bottom: 1px dotted #ccc;\n  color: #333;\n  display: block;\n  font-size: 14px;\n  font-weight: bold;\n  padding: 8px;\n}\n\n.jDuM8TUdZYiYJupfk3Zwi {\n    background:none;\n    border:none;\n    margin: 0;\n    padding: 0;\n    border: 0;\n    outline: 0;\n    cursor: pointer;\n    display: block;\n    color: #cd2418;\n    text-decoration: underline;\n    font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n    margin-bottom: 5px;\n    margin-left: 5px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._1czmsgAEXEyMpW1pLBW0YR {\n  background: #fff;\n  padding: 0;\n  font-size: 1.1em;\n  z-index: 3;\n  display: block;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  vertical-align: baseline;\n}\n\n._2UGT9kgHJQlH_sohMjXryu {\n  width: 25px;\n  height: 25px;\n  float: right;\n  margin-top: 18px;\n  margin-right: 10px;\n}\n\n._38KoIGGc3zGFCXXrucabbl {\n  font-size: 12px;\n  padding: 8px;\n  display: block;\n}\n\n.xToavByUb-g71FYk3s1aT {\n  display: block;\n  width: 300px;\n  position: absolute;\n  margin: auto;\n  bottom: 150%;\n  background-color: white ;\n  border-radius: 3px 3px 0 0;\n  box-shadow: 0 0 6px rgba(0,0,0,0.2);\n  z-index: 100;\n}\n\n._2dcZj7Nlmz1ok3zgcV5ath {\n  background: #efefef;\n  border-bottom: 1px dotted #ccc;\n  color: #333;\n  display: block;\n  font-size: 14px;\n  font-weight: bold;\n  padding: 8px;\n}\n\n.jDuM8TUdZYiYJupfk3Zwi {\n  background:none;\n  border:none;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  display: block;\n  color: #cd2418;\n  text-decoration: underline;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin-bottom: 5px;\n  margin-left: 5px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"popup": "_1czmsgAEXEyMpW1pLBW0YR",
+	"close": "_2UGT9kgHJQlH_sohMjXryu",
 	"aside": "_38KoIGGc3zGFCXXrucabbl",
 	"popupinner": "xToavByUb-g71FYk3s1aT",
 	"popheader": "_2dcZj7Nlmz1ok3zgcV5ath",
@@ -4247,7 +4495,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._3lUNG1ERdCzrVFFWvLwzyx {\n  margin-top: 10px;\n  display: block;\n  /* margin-bottom: 10px; */\n}\n\n._1vy0XDQC7efQb0vIwB_urV {\n  font-size: 40px;\n  float: left;\n  padding-bottom: 10px;\n  font-weight: bold;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}\n\n._1XMMS7EfMBB01ROzd64SbJ {\n  font-size: 12px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._3lUNG1ERdCzrVFFWvLwzyx {\n  margin-top: 10px;\n  display: block;\n}\n\n._1vy0XDQC7efQb0vIwB_urV {\n  font-size: 40px;\n  float: left;\n  padding-bottom: 10px;\n  font-weight: bold;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}\n\n._1XMMS7EfMBB01ROzd64SbJ {\n  font-size: 12px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"pricewrapper": "_3lUNG1ERdCzrVFFWvLwzyx",
@@ -4274,7 +4522,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._10HdeNX_zNPLcz-FV3Cr6M {\n  height: 39px;\n  width: 65px;\n}\n\n._1aaI7id4lNPF8iLwdr9Oco {\n  display: inline-block;\n  height: 24px;\n  margin: 0 auto;\n  width: 22px;\n  background-repeat: no-repeat;\n  padding-top: 6px;\n  color: #333;\n}\n\n.Wjymrz-ZmVsQ0CIOhgEY_ {\n  margin-top: 5px;\n  max-height: 60px;\n  max-width: 100px;\n}\n\n.F_dstgWx9x7G2twQz3TZ4 {\n  font-family: montserratregular,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ ul {\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n  padding-inline-start: 40px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ li {\n  font-family: montserratregular,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: flex;\n  margin-bottom: 10px;\n  color: #333;\n}\n\n._1Nz5Af_S0BRisgKeLmOaA5 {\n  color: #333;\n  font-family: montserratregular,Arial,Helvetica,sans-serif;\n}\n\n._1i8RJ-k35YA6kIFhAJ0BL1 {\n  height:40px;\n  width: 45px;\n  text-align: left;\n}\n\n._2WoCukLg-LI7X4KbaA2YCH {\n  font-family: montserratregular,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n._3wGnKBB63yRhPTbBdNPH9h {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._1pvL3vALoq7nC3IRvtZWRo {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._2pyPdaK3F_puShhaHG_MDc {\n  position: absolute;\n  margin-top: 16px;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._3eqDiezS2JIelTW_kYLy4z {\n  font-family: montserratregular,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n  margin-top: 5px;\n}\n\n.j2jCIlSK26QBFpNYy4o9w {\n  border-top: 1px solid #e7e7e7;\n  border-bottom: 1px solid #e7e7e7;\n  display: table;\n  width: 100%;\n  padding: 18px 0 10px;\n  text-align: center;\n}\n\n._3KAFPXpMIv-VqCgDvMOGLd {\n  height: 55px;\n  width: 50px;\n  text-align: left;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ a {\n  color: #404040;\n  font-family: Montserratregular,Arial,Helvetica,sans-serif;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._10HdeNX_zNPLcz-FV3Cr6M {\n  height: 39px;\n  width: 65px;\n}\n\n._1aaI7id4lNPF8iLwdr9Oco {\n  display: inline-block;\n  height: 24px;\n  margin: 0 auto;\n  width: 22px;\n  background-repeat: no-repeat;\n  padding-top: 6px;\n  color: #333;\n}\n\n.Wjymrz-ZmVsQ0CIOhgEY_ {\n  margin-top: 5px;\n  max-height: 60px;\n  max-width: 100px;\n}\n\n.F_dstgWx9x7G2twQz3TZ4 {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ ul {\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n  padding-inline-start: 40px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ li {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: flex;\n  margin-bottom: 10px;\n  color: #333;\n}\n\n._1Nz5Af_S0BRisgKeLmOaA5 {\n  color: #333;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}\n\n._1i8RJ-k35YA6kIFhAJ0BL1 {\n  height:40px;\n  width: 45px;\n  text-align: left;\n}\n\n._2WoCukLg-LI7X4KbaA2YCH {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n._3wGnKBB63yRhPTbBdNPH9h {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._1pvL3vALoq7nC3IRvtZWRo {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._2pyPdaK3F_puShhaHG_MDc {\n  position: absolute;\n  margin-top: 16px;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._3eqDiezS2JIelTW_kYLy4z {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n  margin-top: 5px;\n}\n\n.j2jCIlSK26QBFpNYy4o9w {\n  border-top: 1px solid #e7e7e7;\n  border-bottom: 1px solid #e7e7e7;\n  display: table;\n  width: 100%;\n  padding: 18px 0 10px;\n  text-align: center;\n}\n\n._3KAFPXpMIv-VqCgDvMOGLd {\n  height: 55px;\n  width: 50px;\n  text-align: left;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ a {\n  color: #404040;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"headphones": "_10HdeNX_zNPLcz-FV3Cr6M",
@@ -4291,6 +4539,38 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"sometext": "_3eqDiezS2JIelTW_kYLy4z",
 	"Promocontainer": "j2jCIlSK26QBFpNYy4o9w",
 	"shipping": "_3KAFPXpMIv-VqCgDvMOGLd"
+};
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./client/css/ProtectPopup.module.css":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./client/css/ProtectPopup.module.css ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "._3h86yjluSGBgWgrdkRdSqT {\n  background: #fff;\n  padding: 0;\n  font-size: 1.1em;\n  z-index: 3;\n  display: block;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  vertical-align: baseline;\n}\n\n.fXhaRKWSat53-ua_tgxNy {\n  width: 25px;\n  height: 25px;\n  float: right;\n  margin-top: 18px;\n  margin-right: 10px;\n}\n\n._1v8ZD6fSit701ObWbMdSUb {\n  font-size: 12px;\n  padding: 8px;\n  display: block;\n}\n\n._3c8G8sQhkYl-JuHWhUCgea {\n  display: block;\n  width: 300px;\n  position: absolute;\n  margin: auto;\n  bottom: 150%;\n  background-color: white ;\n  border-radius: 3px 3px 0 0;\n  box-shadow: 0 0 6px rgba(0,0,0,0.2);\n  z-index: 100;\n}\n\n._3uL18GfRjeDOyoucz02hWG {\n  background: #efefef;\n  border-bottom: 1px dotted #ccc;\n  color: #333;\n  display: block;\n  font-size: 14px;\n  font-weight: bold;\n  padding: 8px;\n}\n\n._2agOxO4Fx5y5t-d7jjZmy4 {\n  list-style: none;\n}\n\n._3aPagvScEJbV6OtTLX-OGZ {\n  padding-left: 1em;\n  text-indent: -.7em;\n  text-align: left;\n  display: list-item;\n  margin-bottom: 7px;\n}\n\n._3aPagvScEJbV6OtTLX-OGZ::before {\n  content: \"• \";\n  text-align: left;\n  color: black;\n}\n\n._1ATy26vbCTgnV3v5xARQH6 {\n  background:none;\n  border:none;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  display: block;\n  color: #cd2418;\n  text-decoration: underline;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin-bottom: 5px;\n  margin-left: 5px;\n}", ""]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"popup": "_3h86yjluSGBgWgrdkRdSqT",
+	"close": "fXhaRKWSat53-ua_tgxNy",
+	"aside": "_1v8ZD6fSit701ObWbMdSUb",
+	"popupinner": "_3c8G8sQhkYl-JuHWhUCgea",
+	"popheader": "_3uL18GfRjeDOyoucz02hWG",
+	"list": "_2agOxO4Fx5y5t-d7jjZmy4",
+	"dot": "_3aPagvScEJbV6OtTLX-OGZ",
+	"popbutton": "_1ATy26vbCTgnV3v5xARQH6"
 };
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -4340,7 +4620,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2S_njiKRyiE5tLAANNngYi {\n  padding-top: 20px;\n  padding-bottom: 10px;\n}\n\n._2ij3gs5Z01zquPn2VntjqB {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n  display: inline-block;\n}\n\n._2oPemvs6JwTzxjMZeolbn1 {\n  text-align: left;\n  font-weight: bold;\n  display: inline-block;\n  padding-right: 10px;\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2S_njiKRyiE5tLAANNngYi {\n  padding-top: 20px;\n  padding-bottom: 10px;\n}\n\n._2ij3gs5Z01zquPn2VntjqB {\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n  display: inline-block;\n}\n\n._2oPemvs6JwTzxjMZeolbn1 {\n  text-align: left;\n  font-weight: bold;\n  display: inline-block;\n  padding-right: 10px;\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"stylewrapper": "_2S_njiKRyiE5tLAANNngYi",
@@ -4367,7 +4647,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  display: flex;\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserratregular, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 100%;\n  height: 75%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  display: flex;\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 100%;\n  height: 75%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"biggrid": "_2bvDjiaN4zSmyFCp51ub_Q",
