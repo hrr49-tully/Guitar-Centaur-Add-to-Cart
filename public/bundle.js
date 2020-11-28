@@ -4335,7 +4335,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".R48dHLInAF1WML39yeo2Z {\n  color: #e7131a;\n  font-family: Montserrat, \"Arial Black\",Arial,Helvetica,sans-serif;\n  margin-bottom: 7.5px;\n  font-size: 12px;\n}\n\n._29-TyT243RSGk0o7TgDUXG {\n  margin-top: 10px;\n  text-decoration: underline;\n  margin-bottom: 15px;\n  color: grey;\n  font-family: Montserrat, light;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".R48dHLInAF1WML39yeo2Z {\n  color: #e7131a;\n  font-family: Montserrat, \"Arial Black\",Arial,Helvetica,sans-serif;\n  margin-bottom: 7.5px;\n  font-size: 12px;\n  font-weight: bold;\n}\n\n._29-TyT243RSGk0o7TgDUXG {\n  margin-top: 10px;\n  text-decoration: underline;\n  margin-bottom: 15px;\n  color: grey;\n  font-family: Montserrat, light;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"fourthfree": "R48dHLInAF1WML39yeo2Z",
