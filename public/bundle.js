@@ -656,7 +656,7 @@ var Inventory = /*#__PURE__*/function (_React$Component) {
         className: _css_Inventory_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].inventorywrapper
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_Inventory_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].inventory
-      }, this.props.inventory));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " ", this.props.inventory, " ")));
     }
   }]);
 
@@ -4282,7 +4282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._29z_-u0CZF_qx_0eo_kpFW {\n  background-color: #cd2418;\n  color: #ffffff;\n  width: 75%;\n  height: 40px;\n  display: flex;\n  float: right;\n  font-size: 25px;\n  border-radius: 4px;\n}\n\n._3J3dd1dWSMnwIFnWs_LAXO {\n  width: 15%;\n  height: 35px;\n  padding-left: 10px;\n  float: left;\n  font-size: 20px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._29z_-u0CZF_qx_0eo_kpFW {\n  background-color: #cd2418;\n  display: inline-block;\n  color: #ffffff;\n  width: 75%;\n  height: 40px;\n  float: right;\n  position: relative;\n  font-size: 25px;\n  border-radius: 4px;\n  text-align: center;\n  align-items: flex-start;\n}\n\n._3J3dd1dWSMnwIFnWs_LAXO {\n  width: 15%;\n  height: 35px;\n  padding-left: 10px;\n  float: left;\n  font-size: 20px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"subbutton": "_29z_-u0CZF_qx_0eo_kpFW",
@@ -4442,7 +4442,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._3EMtKbifqZgIiYISKxgkMO {\n  color: black;\n  width: 100%;\n  margin-top: 30px;\n  padding-bottom: 5px;\n}\n\n._2cVmYQ_gQgVrx1MlxfLQ_a {\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n  font-size: 16px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._3EMtKbifqZgIiYISKxgkMO {\n  color: black;\n  width: 100%;\n  margin-top: 10px;\n  padding-bottom: 5px;\n}\n\n._2cVmYQ_gQgVrx1MlxfLQ_a {\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n  font-size: 16px;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"inventorywrapper": "_3EMtKbifqZgIiYISKxgkMO",
@@ -4528,7 +4528,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._1r97UCRYVRjuqpohaXL35E {\n  color: green;\n  text-align: right;\n  font-weight: bold;\n}\n\n.On0A39Fj-bDIT2LT-yxA3 {\n  text-align: right;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._1r97UCRYVRjuqpohaXL35E {\n  color: green;\n  text-align: right;\n  font-weight: bold;\n}\n\n.On0A39Fj-bDIT2LT-yxA3 {\n  text-align: right;\n  line-height: 1.5em;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"message": "_1r97UCRYVRjuqpohaXL35E",

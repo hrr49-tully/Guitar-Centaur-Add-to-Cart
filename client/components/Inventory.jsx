@@ -12,7 +12,7 @@ class Inventory extends React.Component {
     return (
       <div className={styles.inventorywrapper}>
         <div className={styles.inventory}>
-          {this.props.inventory}
+          <span> {this.props.inventory} </span>
         </div>
       </div>
     );

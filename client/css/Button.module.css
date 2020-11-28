@@ -1,12 +1,15 @@
 .subbutton {
   background-color: #cd2418;
+  display: inline-block;
   color: #ffffff;
   width: 75%;
   height: 40px;
-  display: flex;
   float: right;
+  position: relative;
   font-size: 25px;
   border-radius: 4px;
+  text-align: center;
+  align-items: flex-start;
 }
 
 .subnumber {
