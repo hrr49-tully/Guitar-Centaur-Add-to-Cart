@@ -1,10 +1,53 @@
 import React from 'react';
 import styles from '../css/Promos.module.css';
+import Popup from './Popup.jsx';
+import InternationalPopup from './International.jsx';
+import ProtectPopup from './ProtectPopup.jsx';
 
 class Promos extends React.Component {
 
   constructor (props) {
     super(props);
+    this.state = {
+      // showPopup: false,
+      showShipping: false,
+      showProtect: false,
+      showInt: false,
+      message: ''
+    }
+
+    this.handleValue = this.handleValue.bind(this);
+    this.handleShip = this.handleShip.bind(this);
+    this.handleInternational = this.handleInternational.bind(this);
+    this.handleProtect = this.handleProtect.bind(this);
+  }
+
+  handleValue(e) {
+    console.log('the value is ', e.target.value);
+  }
+
+  handleShip(e) {
+    this.setState({
+      showShipping: !this.state.showShipping,
+      showInt: false,
+      showProtect: false
+    });
+  }
+
+  handleProtect(e) {
+    this.setState({
+      showProtect: !this.state.showProtect,
+      showInt: false,
+      showShipping: false
+    });
+  }
+
+  handleInternational (e) {
+    this.setState({
+      showInt: !this.state.showInt,
+      showShipping: false,
+      showProtect: false
+    });
   }
 
   render () {
@@ -12,16 +55,35 @@ class Promos extends React.Component {
     <>
     <ul className={styles.Promocontainer}>
       <li className={styles.headphoneswrapper}>
-      <span className={styles.anchor}> <img className={styles.headphones} src={'https://img.flaticon.com/icons/png/512/27/27130.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF'}></img> </span>
-        <a className={styles.actual} href=""> <span className={styles.protect}> Protect Your Gear </span> </a>
+      <span className={styles.anchor} onClick={this.handleValue}> <img className={styles.headphones} src={'https://img.flaticon.com/icons/png/512/27/27130.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF'}></img> </span>
+        <a className={styles.actual} onClick={this.handleProtect} > <span className={styles.protect} value="Protect" > Protect Your Gear </span> </a>
+        {this.state.showProtect ?
+          <ProtectPopup
+          closePopup={this.handleProtect.bind(this)}
+          />
+          : null
+        }
       </li>
+
       <li className={styles.sometext}>
-      <span className={styles.anchor} > <img className={styles.shipping} src={'https://image.flaticon.com/icons/png/512/44/44266.png'}></img> </span>
-        <a className={styles.actual} href=""> <span className={styles.free}> Free Shipping </span>  </a>
+      <span  className={styles.anchor} value="Free shipping" onClick={this.handleValue} > <img className={styles.shipping} src={'https://image.flaticon.com/icons/png/512/44/44266.png'}></img> </span>
+        <a className={styles.actual} onClick={this.handleShip} target="Free Shipping" > <span className={styles.free} value="Free Shipping" > Free Shipping </span> </a>
+        {this.state.showShipping ?
+          <Popup
+          closePopup={this.handleShip.bind(this)}
+          />
+          : null
+        }
       </li>
       <li className={styles.international}>
       <span className={styles.anchor}> <img className={styles.internationalicon} src={'https://image.flaticon.com/icons/png/128/558/558593.png'}></img> </span>
-         <a className={styles.actual} href="" > <span className={styles.intshipping}> International Shipping </span> </a>
+         <a className={styles.actual} onClick={this.handleInternational}> <span className={styles.intshipping} value="International"> International Shipping </span> </a>
+         {this.state.showInt ?
+          <InternationalPopup
+          closePopup={this.handleInternational.bind(this)}
+          />
+          : null
+        }
         </li>
       </ul>
       <div >
