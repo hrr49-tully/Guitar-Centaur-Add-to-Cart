@@ -577,7 +577,9 @@ var InternationalPopup = /*#__PURE__*/function (_React$Component) {
         className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popup
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popupinner
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popdiv
+      }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         onClick: this.props.closePopup,
         className: _css_InternationalPopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].close,
         src: "https://image.flaticon.com/icons/png/512/2938/2938566.png"
@@ -677,6 +679,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/LessonPlans.module.css */ "./client/css/LessonPlans.module.css");
+/* harmony import */ var _LessonPopup_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LessonPopup.jsx */ "./client/components/LessonPopup.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -702,18 +705,34 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var LessonPlans = /*#__PURE__*/function (_React$Component) {
   _inherits(LessonPlans, _React$Component);
 
   var _super = _createSuper(LessonPlans);
 
   function LessonPlans(props) {
+    var _this;
+
     _classCallCheck(this, LessonPlans);
 
-    return _super.call(this, props);
+    _this = _super.call(this, props);
+    _this.state = {
+      lessonPop: false
+    };
+    _this.handlePop = _this.handlePop.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(LessonPlans, [{
+    key: "handlePop",
+    value: function handlePop(e) {
+      this.setState({
+        lessonPop: !this.state.lessonPop
+      });
+      console.log('lessonpop is ', this.state.lessonPop);
+    }
+  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -721,10 +740,13 @@ var LessonPlans = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lesson60
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lessonsplanbutton
+        className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lessonsplanbutton,
+        onClick: this.handlePop
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " Add four 60 minute lessons "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lesson
-      }, " ", this.props.sixty, " "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, " ", this.props.sixty)), this.state.lessonPop ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LessonPopup_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        closePopup: this.handlePop.bind(this)
+      }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lesson30
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lessonsplanbutton
@@ -742,6 +764,83 @@ var LessonPlans = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (LessonPlans);
+
+/***/ }),
+
+/***/ "./client/components/LessonPopup.jsx":
+/*!*******************************************!*\
+  !*** ./client/components/LessonPopup.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/Popup.module.css */ "./client/css/Popup.module.css");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var LessonPopup = /*#__PURE__*/function (_React$Component) {
+  _inherits(LessonPopup, _React$Component);
+
+  var _super = _createSuper(LessonPopup);
+
+  function LessonPopup() {
+    _classCallCheck(this, LessonPopup);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(LessonPopup, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popup
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popupinner
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        onClick: this.props.closePopup,
+        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].close,
+        src: "https://image.flaticon.com/icons/png/512/2938/2938566.png"
+      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popheader
+      }, "Free Shipping"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
+        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].aside
+      }, "This item qualifies for free ground shipping anywhere within the contiguous United States."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popbutton,
+        onClick: this.props.closePopup
+      }, "close me")));
+    }
+  }]);
+
+  return LessonPopup;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (LessonPopup);
 
 /***/ }),
 
@@ -1135,13 +1234,10 @@ var Promos = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      // showPopup: false,
       showShipping: false,
       showProtect: false,
-      showInt: false,
-      message: ''
+      showInt: false
     };
-    _this.handleValue = _this.handleValue.bind(_assertThisInitialized(_this));
     _this.handleShip = _this.handleShip.bind(_assertThisInitialized(_this));
     _this.handleInternational = _this.handleInternational.bind(_assertThisInitialized(_this));
     _this.handleProtect = _this.handleProtect.bind(_assertThisInitialized(_this));
@@ -1149,11 +1245,6 @@ var Promos = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(Promos, [{
-    key: "handleValue",
-    value: function handleValue(e) {
-      console.log('the value is ', e.target.value);
-    }
-  }, {
     key: "handleShip",
     value: function handleShip(e) {
       this.setState({
@@ -1188,8 +1279,7 @@ var Promos = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].headphoneswrapper
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].anchor,
-        onClick: this.handleValue
+        className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].anchor
       }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].headphones,
         src: 'https://img.flaticon.com/icons/png/512/27/27130.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF'
@@ -1205,8 +1295,7 @@ var Promos = /*#__PURE__*/function (_React$Component) {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sometext
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].anchor,
-        value: "Free shipping",
-        onClick: this.handleValue
+        value: "Free shipping"
       }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: _css_Promos_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].shipping,
         src: 'https://image.flaticon.com/icons/png/512/44/44266.png'
@@ -4522,7 +4611,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._10HdeNX_zNPLcz-FV3Cr6M {\n  height: 39px;\n  width: 65px;\n}\n\n._1aaI7id4lNPF8iLwdr9Oco {\n  display: inline-block;\n  height: 24px;\n  margin: 0 auto;\n  width: 22px;\n  background-repeat: no-repeat;\n  padding-top: 6px;\n  color: #333;\n}\n\n.Wjymrz-ZmVsQ0CIOhgEY_ {\n  margin-top: 5px;\n  max-height: 60px;\n  max-width: 100px;\n}\n\n.F_dstgWx9x7G2twQz3TZ4 {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ ul {\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n  padding-inline-start: 40px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ li {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: flex;\n  margin-bottom: 10px;\n  color: #333;\n}\n\n._1Nz5Af_S0BRisgKeLmOaA5 {\n  color: #333;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}\n\n._1i8RJ-k35YA6kIFhAJ0BL1 {\n  height:40px;\n  width: 45px;\n  text-align: left;\n}\n\n._2WoCukLg-LI7X4KbaA2YCH {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n._3wGnKBB63yRhPTbBdNPH9h {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._1pvL3vALoq7nC3IRvtZWRo {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._2pyPdaK3F_puShhaHG_MDc {\n  position: absolute;\n  margin-top: 16px;\n  margin-left: 30px;\n  text-decoration: underline;\n}\n\n._3eqDiezS2JIelTW_kYLy4z {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n  margin-top: 5px;\n}\n\n.j2jCIlSK26QBFpNYy4o9w {\n  border-top: 1px solid #e7e7e7;\n  border-bottom: 1px solid #e7e7e7;\n  display: table;\n  width: 100%;\n  padding: 18px 0 10px;\n  text-align: center;\n}\n\n._3KAFPXpMIv-VqCgDvMOGLd {\n  height: 55px;\n  width: 50px;\n  text-align: left;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ a {\n  color: #404040;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._10HdeNX_zNPLcz-FV3Cr6M {\n  height: 39px;\n  width: 65px;\n}\n\n._1aaI7id4lNPF8iLwdr9Oco {\n  display: inline-block;\n  height: 24px;\n  margin: 0 auto;\n  width: 22px;\n  background-repeat: no-repeat;\n  padding-top: 6px;\n  color: #333;\n}\n\n.Wjymrz-ZmVsQ0CIOhgEY_ {\n  margin-top: 5px;\n  max-height: 60px;\n  max-width: 100px;\n}\n\n.F_dstgWx9x7G2twQz3TZ4 {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ ul {\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n  padding-inline-start: 40px;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ li {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: flex;\n  margin-bottom: 10px;\n  color: #333;\n}\n\n._1Nz5Af_S0BRisgKeLmOaA5 {\n  color: #333;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}\n\n._1i8RJ-k35YA6kIFhAJ0BL1 {\n  height:40px;\n  width: 45px;\n  text-align: left;\n}\n\n._2WoCukLg-LI7X4KbaA2YCH {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n}\n\n._3wGnKBB63yRhPTbBdNPH9h {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n._1pvL3vALoq7nC3IRvtZWRo {\n  position: absolute;\n  margin-left: 30px;\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n._2pyPdaK3F_puShhaHG_MDc {\n  position: absolute;\n  margin-top: 16px;\n  margin-left: 30px;\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n._3eqDiezS2JIelTW_kYLy4z {\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n  font-size: 12px;\n  padding: 0 5px;\n  text-align: left;\n  position: relative;\n  min-width: 140px;\n  box-sizing: border-box;\n  display: table-cell;\n  margin-bottom: 10px;\n  margin-top: 5px;\n}\n\n.j2jCIlSK26QBFpNYy4o9w {\n  border-top: 1px solid #e7e7e7;\n  border-bottom: 1px solid #e7e7e7;\n  display: table;\n  width: 100%;\n  padding: 18px 0 10px;\n  text-align: center;\n}\n\n._3KAFPXpMIv-VqCgDvMOGLd {\n  height: 55px;\n  width: 50px;\n  text-align: left;\n}\n\n#_3laMdXt3TBu3D24oG7BQIQ a {\n  color: #404040;\n  font-family: Montserrat,Arial,Helvetica,sans-serif;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"headphones": "_10HdeNX_zNPLcz-FV3Cr6M",
