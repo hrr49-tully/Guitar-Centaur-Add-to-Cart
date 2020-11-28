@@ -79,12 +79,14 @@
   position: absolute;
   margin-left: 30px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .protect {
   position: absolute;
   margin-left: 30px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .free {
@@ -92,6 +94,7 @@
   margin-top: 16px;
   margin-left: 30px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .sometext {

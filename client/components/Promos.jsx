@@ -9,21 +9,14 @@ class Promos extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      // showPopup: false,
       showShipping: false,
       showProtect: false,
-      showInt: false,
-      message: ''
+      showInt: false
     }
 
-    this.handleValue = this.handleValue.bind(this);
     this.handleShip = this.handleShip.bind(this);
     this.handleInternational = this.handleInternational.bind(this);
     this.handleProtect = this.handleProtect.bind(this);
-  }
-
-  handleValue(e) {
-    console.log('the value is ', e.target.value);
   }
 
   handleShip(e) {
@@ -55,7 +48,7 @@ class Promos extends React.Component {
     <>
     <ul className={styles.Promocontainer}>
       <li className={styles.headphoneswrapper}>
-      <span className={styles.anchor} onClick={this.handleValue}> <img className={styles.headphones} src={'https://img.flaticon.com/icons/png/512/27/27130.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF'}></img> </span>
+      <span className={styles.anchor} > <img className={styles.headphones} src={'https://img.flaticon.com/icons/png/512/27/27130.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF'}></img> </span>
         <a className={styles.actual} onClick={this.handleProtect} > <span className={styles.protect} value="Protect" > Protect Your Gear </span> </a>
         {this.state.showProtect ?
           <ProtectPopup
@@ -66,7 +59,7 @@ class Promos extends React.Component {
       </li>
 
       <li className={styles.sometext}>
-      <span  className={styles.anchor} value="Free shipping" onClick={this.handleValue} > <img className={styles.shipping} src={'https://image.flaticon.com/icons/png/512/44/44266.png'}></img> </span>
+      <span  className={styles.anchor} value="Free shipping" > <img className={styles.shipping} src={'https://image.flaticon.com/icons/png/512/44/44266.png'}></img> </span>
         <a className={styles.actual} onClick={this.handleShip} target="Free Shipping" > <span className={styles.free} value="Free Shipping" > Free Shipping </span> </a>
         {this.state.showShipping ?
           <Popup
