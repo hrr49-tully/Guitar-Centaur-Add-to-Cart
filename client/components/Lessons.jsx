@@ -13,7 +13,8 @@ class Lessons extends React.Component {
     this.state = {
       selectedValue: '',
       sixtyMinutes: '',
-      thirtyMinutes: ''
+      thirtyMinutes: '',
+      plan: ''
     }
 
     this.handleLesson = this.handleLesson.bind(this);
@@ -24,13 +25,15 @@ class Lessons extends React.Component {
       this.setState({
         selectedValue: e.target.value,
         sixtyMinutes: '+ $198.99',
-        thirtyMinutes: '+ $99.99'
+        thirtyMinutes: '+ $99.99',
+        plan: e.target.value
       });
     } else {
       this.setState({
         selectedValue: e.target.value,
         sixtyMinutes: '',
-        thirtyMinutes: ''
+        thirtyMinutes: '',
+        plan: e.target.value
       });
     }
   }
@@ -57,7 +60,7 @@ class Lessons extends React.Component {
         </div>
       </div>
     </div>
-    <LessonPlans thirty={this.state.thirtyMinutes} sixty={this.state.sixtyMinutes}/>
+    <LessonPlans plan={this.state.plan} thirty={this.state.thirtyMinutes} sixty={this.state.sixtyMinutes}/>
     <Extra />
     <Promos />
     </>
