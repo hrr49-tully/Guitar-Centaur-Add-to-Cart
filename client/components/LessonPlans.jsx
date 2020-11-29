@@ -8,34 +8,49 @@ class LessonPlans extends React.Component {
     super(props);
 
     this.state = {
-      lessonPop: false
+      lessonPop: false,
+      thirtyPop: false
     }
+
     this.handlePop = this.handlePop.bind(this);
+    this.handleThirty = this.handleThirty.bind(this);
   }
 
-  handlePop (e) {
-    this.setState({
-      lessonPop: !this.state.lessonPop
-    });
-    console.log('lessonpop is ', this.state.lessonPop);
+  handleThirty () {
+    if(this.props.plan === "In-Store") {
+      this.setState({
+        lessonPop: false,
+        thirtyPop: !this.state.thirtyPop
+      });
+    }
+  }
+
+  handlePop () {
+    if(this.props.plan === "In-Store") {
+      this.setState({
+        lessonPop: !this.state.lessonPop,
+        thirtyPop: false
+      });
+    }
   }
 
   render () {
     return (
       <div className={styles.lessonplan}>
-        <div className={styles.lesson60}>
-          <button className={styles.lessonsplanbutton} onClick={this.handlePop} >
-            <div> Add four 60 minute lessons </div>
+        <div className={styles.lesson60} >
+          <button onClick={this.handlePop} className={styles.lessonsplanbutton}>
+            <div > Add four 60 minute lessons </div>
             <div className={styles.lesson}> {this.props.sixty}
             </div>
           </button>
-          {this.state.lessonPop ? <LessonPopup closePopup={this.handlePop.bind(this)}/>:null }
+          {this.state.lessonPop ? <LessonPopup sixtyProp={this.props.sixty} closePopup={this.handlePop.bind(this)}/> : null }
         </div>
-        <div className={styles.lesson30}>
-          <button className={styles.lessonsplanbutton}>
+        <div className={styles.lesson30} >
+          <button onClick={this.handleThirty} className={styles.lessonsplanbutton}>
             <div> Add four 30 minute lessons </div>
             <div className={styles.lesson}> {this.props.thirty} </div>
           </button>
+          {this.state.thirtyPop ? <LessonPopup closePopup={this.handleThirty.bind(this)}/>:null }
         </div>
         <div className={styles.nothanks}>
           <button className={styles.lessonsplanbutton}>

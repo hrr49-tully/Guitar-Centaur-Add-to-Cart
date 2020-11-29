@@ -718,19 +718,33 @@ var LessonPlans = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      lessonPop: false
+      lessonPop: false,
+      thirtyPop: false
     };
     _this.handlePop = _this.handlePop.bind(_assertThisInitialized(_this));
+    _this.handleThirty = _this.handleThirty.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(LessonPlans, [{
+    key: "handleThirty",
+    value: function handleThirty() {
+      if (this.props.plan === "In-Store") {
+        this.setState({
+          lessonPop: false,
+          thirtyPop: !this.state.thirtyPop
+        });
+      }
+    }
+  }, {
     key: "handlePop",
-    value: function handlePop(e) {
-      this.setState({
-        lessonPop: !this.state.lessonPop
-      });
-      console.log('lessonpop is ', this.state.lessonPop);
+    value: function handlePop() {
+      if (this.props.plan === "In-Store") {
+        this.setState({
+          lessonPop: !this.state.lessonPop,
+          thirtyPop: false
+        });
+      }
     }
   }, {
     key: "render",
@@ -740,19 +754,23 @@ var LessonPlans = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lesson60
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lessonsplanbutton,
-        onClick: this.handlePop
+        onClick: this.handlePop,
+        className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lessonsplanbutton
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " Add four 60 minute lessons "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lesson
       }, " ", this.props.sixty)), this.state.lessonPop ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LessonPopup_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        sixtyProp: this.props.sixty,
         closePopup: this.handlePop.bind(this)
       }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lesson30
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.handleThirty,
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lessonsplanbutton
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " Add four 30 minute lessons "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lesson
-      }, " ", this.props.thirty, " "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, " ", this.props.thirty, " ")), this.state.thirtyPop ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LessonPopup_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        closePopup: this.handleThirty.bind(this)
+      }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].nothanks
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: _css_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].lessonsplanbutton
@@ -778,7 +796,7 @@ var LessonPlans = /*#__PURE__*/function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/Popup.module.css */ "./client/css/Popup.module.css");
+/* harmony import */ var _css_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/Lessonpopup.module.css */ "./client/css/Lessonpopup.module.css");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -809,29 +827,27 @@ var LessonPopup = /*#__PURE__*/function (_React$Component) {
 
   var _super = _createSuper(LessonPopup);
 
-  function LessonPopup() {
+  function LessonPopup(props) {
     _classCallCheck(this, LessonPopup);
 
-    return _super.apply(this, arguments);
+    return _super.call(this, props);
   }
 
   _createClass(LessonPopup, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popup
+        className: _css_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popup
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popupinner
+        className: _css_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popupinner
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         onClick: this.props.closePopup,
-        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].close,
+        className: _css_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].close,
         src: "https://image.flaticon.com/icons/png/512/2938/2938566.png"
-      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popheader
-      }, "Free Shipping"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
-        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].aside
-      }, "This item qualifies for free ground shipping anywhere within the contiguous United States."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: _css_Popup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popbutton,
+      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
+        className: _css_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].aside
+      }, "In\u2010store lessons are currently unavailable, except in a few select locations. As we reopen in\u2010store lessons, we have worked diligently with our parents and students to co\u2010create safety standards and protocols together. Our goal is to ensure our students and instructors stay safe as we continue to provide great musical learning experiences."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: _css_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].popbutton,
         onClick: this.props.closePopup
       }, "close me")));
     }
@@ -901,7 +917,8 @@ var Lessons = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       selectedValue: '',
       sixtyMinutes: '',
-      thirtyMinutes: ''
+      thirtyMinutes: '',
+      plan: ''
     };
     _this.handleLesson = _this.handleLesson.bind(_assertThisInitialized(_this));
     return _this;
@@ -914,13 +931,15 @@ var Lessons = /*#__PURE__*/function (_React$Component) {
         this.setState({
           selectedValue: e.target.value,
           sixtyMinutes: '+ $198.99',
-          thirtyMinutes: '+ $99.99'
+          thirtyMinutes: '+ $99.99',
+          plan: e.target.value
         });
       } else {
         this.setState({
           selectedValue: e.target.value,
           sixtyMinutes: '',
-          thirtyMinutes: ''
+          thirtyMinutes: '',
+          plan: e.target.value
         });
       }
     }
@@ -951,6 +970,7 @@ var Lessons = /*#__PURE__*/function (_React$Component) {
         onChange: this.handleLesson,
         checked: this.state.selectedValue === "In-Store"
       })), "In-Store Lessons")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LessonPlans_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        plan: this.state.plan,
         thirty: this.state.thirtyMinutes,
         sixty: this.state.sixtyMinutes
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Extra_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Promos_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], null));
@@ -2021,6 +2041,34 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_LessonPlans_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./client/css/Lessonpopup.module.css":
+/*!*******************************************!*\
+  !*** ./client/css/Lessonpopup.module.css ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./Lessonpopup.module.css */ "./node_modules/css-loader/dist/cjs.js!./client/css/Lessonpopup.module.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_Lessonpopup_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -4483,6 +4531,35 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./client/css/Lessonpopup.module.css":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./client/css/Lessonpopup.module.css ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "._2kXcVpeEwqKuakNCH-uBtF {\n\n  background-color: rgba(0,0,0, 0.5);\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n}\n\n._1UIh8OdFxf4Ve0fdf9kO4F {\n  border:none;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  display: block;\n  color: #cd2418;\n  text-decoration: underline;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin-bottom: 5px;\n  margin-left: 5px;\n}\n\n._3UOqTfaf-LMRAkSG_wMDiF {\n  width: 25px;\n  height: 25px;\n  float: right;\n  margin-top: 18px;\n  margin-right: 10px;\n}\n\n._3qduylhaCCtivavkt4mq2i {\n  font-size: 14px;\n  padding: 8px;\n  display: block;\n  background-color: #fff3cd;\n  position: relative;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin: 10px;\n}\n\n._1t1cxDASpA1HXW4w493xOj {\n  position: absolute;\n  left: 25%;\n  right: 25%;\n  top: 25%;\n  bottom: 25%;\n  display: block;\n  margin: auto;\n  /* border-radius: 20px; */\n  background: white;\n  z-index: 1999;\n  box-shadow: 0 0 6px rgba(0,0,0,0.2);\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n}", ""]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"popup": "_2kXcVpeEwqKuakNCH-uBtF",
+	"popbutton": "_1UIh8OdFxf4Ve0fdf9kO4F",
+	"close": "_3UOqTfaf-LMRAkSG_wMDiF",
+	"aside": "_3qduylhaCCtivavkt4mq2i",
+	"popupinner": "_1t1cxDASpA1HXW4w493xOj"
+};
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./client/css/Lessons.module.css":
 /*!*****************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./client/css/Lessons.module.css ***!
@@ -4736,7 +4813,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  display: flex;\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 100%;\n  height: 75%;\n  z-index: 2;\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2bvDjiaN4zSmyFCp51ub_Q {\n  grid-column-start: 1;\n  grid-row-start: 1;\n  display: block;\n}\n\n.ve-K64vdXVSCsAXNBpiTL {\n  display: flex;\n  width: 100%;\n}\n\n.X-Ykn-24ZBwtP8sGPjBJD {\n  font-family: Montserrat, Arial,Helvetica,sans-serif;\n}\n\n.cCJyTU2pHcsZ56t7m91En {\n  background: #F8F8F8;\n  padding: 15px;\n  width: 100%;\n  height: 75%;\n  /* z-index: 2; */\n  display: grid;\n  grid-row-start: 1;\n  grid-column-start: 2;\n  grid-column-end: 2;\n  border: 1px solid black;\n  box-sizing: border-box;\n  border: 1px solid #E7E7E7;\n}\n\n._2rWXOjpFeB6oQb7G2Oy5Pl {\n  display: flex;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"biggrid": "_2bvDjiaN4zSmyFCp51ub_Q",
