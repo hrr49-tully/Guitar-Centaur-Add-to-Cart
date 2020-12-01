@@ -13,9 +13,12 @@
 1. [Development](#development)
 
 ## Usage
+This is a standalone module for Guitar Centaur's Add to cart module. It consists of a product description, and the add to cart table, too.
 
-> Some usage instructions
-Add-to-Cart
+to run server:
+-npm run server
+to run webpack:
+-npm run build
 
 ## Requirements
 
