@@ -20,10 +20,7 @@ class AddToCart extends React.Component {
     super(props);
 
     this.state = {
-      image1: [],
-      image2: [],
-      image3: [],
-      image4: [],
+      images: [],
       style: 'Black',
       message: 'In Stock',
       status: 'Add to Cart',
@@ -91,45 +88,40 @@ class AddToCart extends React.Component {
   componentDidMount () {
     axios.get('/api/styles')
       .then(response => {
+        console.log('response is ', response.data);
         this.setState({
-          image1: response.data[0].image_url,
-          image2: response.data[1].image_url,
-          image3: response.data[2].image_url,
-          image4: response.data[6].image_url
+          images: response.data,
         });
       })
       .catch(err => {
         console.log('received an error from get request in ATC', err);
       });
   }
+
   render () {
     return (
-      <>
-    <div className={styles.biggrid}>
+    <>
+      <div className={styles.biggrid}>
         <Description />
-    <div className={styles.description}>{this.props.description}</div>
-        <Style style={this.handleFirst(this.state.style)}  />
-        <Images img1={this.state.image1} img2={this.state.image2} img3={this.state.image3} img4={this.state.image4} hover={this.handleHover} click={this.handleClick} />
-        <Lessons />
-    </div>
-    <div className={styles.container}>
-      <div className={styles.addtocart}>
-        <AddToList />
-        <Price price={this.props.prices}/>
-        <Financing />
-        <Message themessage={this.state.message}/>
-        <Button other={this.state.message} button={this.state.status}/>
-        <Inventory inventory={this.state.inventory}/>
-        <div className={styles.qs}>
-          <Questions questions={this.props.questions}/>
+        <div className={styles.description}>{this.props.description}</div>
+          <Style style={this.handleFirst(this.state.style)}  />
+          <Images images={this.state.images} hover={this.handleHover} click={this.handleClick} />
+          <Lessons />
         </div>
-      </div>
-    </div>
-
-
-
-
-      </>
+        <div className={styles.container}>
+          <div className={styles.addtocart}>
+            <AddToList />
+            <Price price={this.props.prices}/>
+            <Financing />
+            <Message themessage={this.state.message}/>
+            <Button other={this.state.message} button={this.state.status}/>
+            <Inventory inventory={this.state.inventory}/>
+            <div className={styles.qs}>
+              <Questions questions={this.props.questions}/>
+            </div>
+          </div>
+        </div>
+    </>
     );
   }
 }

@@ -434,10 +434,10 @@ var Financing = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ "./client/components/Images.jsx":
-/*!**************************************!*\
-  !*** ./client/components/Images.jsx ***!
-  \**************************************/
+/***/ "./client/components/ImageList.jsx":
+/*!*****************************************!*\
+  !*** ./client/components/ImageList.jsx ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -446,6 +446,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _css_Images_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/Images.module.css */ "./client/css/Images.module.css");
+/* harmony import */ var _Images_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Images.jsx */ "./client/components/Images.jsx");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -471,6 +474,83 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+
+var ImageList = /*#__PURE__*/function (_React$Component) {
+  _inherits(ImageList, _React$Component);
+
+  var _super = _createSuper(ImageList);
+
+  function ImageList(props) {
+    var _this;
+
+    _classCallCheck(this, ImageList);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      style: ''
+    };
+    return _this;
+  }
+
+  _createClass(ImageList, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        onClick: this.props.click,
+        onMouseOver: this.props.hover,
+        className: _css_Images_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].image,
+        src: this.props.imageURL
+      });
+    }
+  }]);
+
+  return ImageList;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (ImageList);
+
+/***/ }),
+
+/***/ "./client/components/Images.jsx":
+/*!**************************************!*\
+  !*** ./client/components/Images.jsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ImageList_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ImageList.jsx */ "./client/components/ImageList.jsx");
+/* harmony import */ var _css_Images_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/Images.module.css */ "./client/css/Images.module.css");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
 var Images = /*#__PURE__*/function (_React$Component) {
   _inherits(Images, _React$Component);
 
@@ -485,28 +565,16 @@ var Images = /*#__PURE__*/function (_React$Component) {
   _createClass(Images, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "images"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: _css_Images_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].image,
-        src: this.props.img1,
-        onClick: this.props.click,
-        onMouseOver: this.props.hover
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: _css_Images_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].image,
-        src: this.props.img2,
-        onClick: this.props.click,
-        onMouseOver: this.props.hover
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: _css_Images_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].image,
-        src: this.props.img3,
-        onClick: this.props.click,
-        onMouseOver: this.props.hover
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: _css_Images_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].image,
-        src: this.props.img4,
-        onClick: this.props.click,
-        onMouseOver: this.props.hover
+      var _this = this;
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.images.slice(0, 4).map(function (image) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ImageList_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          key: image.id,
+          click: _this.props.click,
+          imageURL: image.image_url,
+          style: image.style,
+          hover: _this.props.hover
+        });
       }));
     }
   }]);
@@ -1657,10 +1725,7 @@ var AddToCart = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      image1: [],
-      image2: [],
-      image3: [],
-      image4: [],
+      images: [],
       style: 'Black',
       message: 'In Stock',
       status: 'Add to Cart',
@@ -1738,11 +1803,10 @@ var AddToCart = /*#__PURE__*/function (_React$Component) {
       var _this4 = this;
 
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/styles').then(function (response) {
+        console.log('response is ', response.data);
+
         _this4.setState({
-          image1: response.data[0].image_url,
-          image2: response.data[1].image_url,
-          image3: response.data[2].image_url,
-          image4: response.data[6].image_url
+          images: response.data
         });
       })["catch"](function (err) {
         console.log('received an error from get request in ATC', err);
@@ -1758,10 +1822,7 @@ var AddToCart = /*#__PURE__*/function (_React$Component) {
       }, this.props.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Style_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
         style: this.handleFirst(this.state.style)
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Images_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        img1: this.state.image1,
-        img2: this.state.image2,
-        img3: this.state.image3,
-        img4: this.state.image4,
+        images: this.state.images,
         hover: this.handleHover,
         click: this.handleClick
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Lessons_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4546,7 +4607,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "._2kXcVpeEwqKuakNCH-uBtF {\n\n  background-color: rgba(0,0,0, 0.5);\n  background: cover;\n  position: fixed;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  z-index: 10000;\n}\n\n._1UIh8OdFxf4Ve0fdf9kO4F {\n  border:none;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  display: block;\n  color: #cd2418;\n  text-decoration: underline;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin-bottom: 5px;\n  margin-left: 5px;\n}\n\n._3UOqTfaf-LMRAkSG_wMDiF {\n  width: 25px;\n  height: 25px;\n  float: right;\n  margin-top: 18px;\n  margin-right: 10px;\n}\n\n._3qduylhaCCtivavkt4mq2i {\n  font-size: 14px;\n  padding: 8px;\n  display: block;\n  background-color: #fff3cd;\n  position: relative;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin: 10px;\n}\n\n._1t1cxDASpA1HXW4w493xOj {\n  position: absolute;\n  left: 25%;\n  right: 25%;\n  top: 25%;\n  bottom: 25%;\n  display: block;\n  margin: auto;\n  /* border-radius: 20px; */\n  background: white;\n  z-index: 1999;\n  box-shadow: 0 0 6px rgba(0,0,0,0.2);\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "._2kXcVpeEwqKuakNCH-uBtF {\n\n  background-color: rgba(0,0,0, 0.5);\n  background: cover;\n  position: fixed;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  z-index: 10000;\n}\n\n._1UIh8OdFxf4Ve0fdf9kO4F {\n  border:none;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  display: block;\n  color: #cd2418;\n  text-decoration: underline;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin-bottom: 5px;\n  margin-left: 5px;\n}\n\n._3UOqTfaf-LMRAkSG_wMDiF {\n  width: 25px;\n  height: 25px;\n  float: right;\n  margin-top: 18px;\n  margin-right: 10px;\n}\n\n._3qduylhaCCtivavkt4mq2i {\n  font-size: 14px;\n  padding: 8px;\n  display: block;\n  background-color: #fff3cd;\n  position: relative;\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n  margin: 10px;\n}\n\n._1t1cxDASpA1HXW4w493xOj {\n  position: absolute;\n  left: 25%;\n  right: 25%;\n  top: 25%;\n  bottom: 25%;\n  display: block;\n  margin: auto;\n  background: white;\n  z-index: 1999;\n  box-shadow: 0 0 6px rgba(0,0,0,0.2);\n  font-family: Arial,Helvetica,\"Helvetica Neue\",sans-serif;\n}", ""]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"popup": "_2kXcVpeEwqKuakNCH-uBtF",
