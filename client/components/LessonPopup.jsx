@@ -7,7 +7,6 @@ class LessonPopup extends React.Component {
     super(props);
   }
 
-
   render() {
     return (
     <div className={styles.popup}>
